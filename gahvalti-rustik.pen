@@ -1,0 +1,4465 @@
+{
+  "version": "2.11",
+  "children": [
+    {
+      "type": "frame",
+      "id": "Kl36f",
+      "x": 0,
+      "y": 0,
+      "name": "Gahvaltı Ankara - Rustik",
+      "clip": true,
+      "width": 1440,
+      "fill": "#F7EFE3",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "e9b8V",
+          "name": "nav",
+          "width": "fill_container",
+          "height": 88,
+          "fill": "#F7EFE3",
+          "stroke": {
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "#E0D2B7"
+          },
+          "padding": [
+            0,
+            64
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "5f18k",
+              "name": "navLogo",
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "fzdU0",
+                  "width": 42,
+                  "height": 42,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./foto/logo_yeni.png",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 21
+                },
+                {
+                  "type": "text",
+                  "id": "fa55V",
+                  "fill": "#5C3A21",
+                  "content": "Gahvaltı",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 28,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "lFptk",
+              "name": "navMenu",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "haFgy",
+                  "fill": "#5C3A21",
+                  "content": "Ana Sayfa",
+                  "fontFamily": "Merriweather",
+                  "fontSize": 13,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "XScNx",
+                  "fill": "#8A6A49",
+                  "content": "Hakkımızda",
+                  "fontFamily": "Merriweather",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "EbSbz",
+                  "fill": "#8A6A49",
+                  "content": "Ürünler",
+                  "fontFamily": "Merriweather",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "mlF8d",
+                  "fill": "#8A6A49",
+                  "content": "Menü",
+                  "fontFamily": "Merriweather",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "CGu7I",
+                  "fill": "#8A6A49",
+                  "content": "Organizasyonlar",
+                  "fontFamily": "Merriweather",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "dwcpO",
+                  "fill": "#8A6A49",
+                  "content": "İletişim",
+                  "fontFamily": "Merriweather",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "3em7P",
+              "name": "navBtn",
+              "fill": "#C9622A",
+              "cornerRadius": 4,
+              "padding": [
+                10,
+                22
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "b6d0d",
+                  "fill": "#FBF6EC",
+                  "content": "Rezervasyon",
+                  "fontFamily": "Merriweather",
+                  "fontSize": 13,
+                  "fontWeight": "700"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "LSQhF",
+          "name": "hero",
+          "width": "fill_container",
+          "gap": 56,
+          "padding": [
+            40,
+            64,
+            80,
+            64
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "FY9zK",
+              "name": "hL",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 28,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "9NfpH",
+                  "name": "hTag",
+                  "fill": "#EADFCB",
+                  "cornerRadius": 20,
+                  "gap": 8,
+                  "padding": [
+                    8,
+                    16
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "19elS",
+                      "fill": "#5C3A21",
+                      "content": "★ Ankara'da ilk ve tek köy kahvaltısı",
+                      "fontFamily": "Merriweather",
+                      "fontSize": 12,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "iv7iK",
+                  "fill": "#2E1D10",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Yöresinden sofranıza.",
+                  "lineHeight": 1.05,
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 80,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "tVb9l",
+                  "fill": "#6B4A2E",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Organik, taptaze ve tamamen yöreden gelen ürünlerle hazırlanan geleneksel bir köy kahvaltısı deneyimi. Ankara'nın en yakın köylerinden birinde, aile ortamında.",
+                  "lineHeight": 1.7,
+                  "fontFamily": "Merriweather",
+                  "fontSize": 17,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "B9YBG",
+                  "name": "hC",
+                  "gap": 14,
+                  "padding": [
+                    8,
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "rCZoq",
+                      "name": "hC1",
+                      "fill": "#C9622A",
+                      "cornerRadius": 4,
+                      "padding": [
+                        16,
+                        32
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "gU1Tn",
+                          "fill": "#FBF6EC",
+                          "content": "Rezervasyon Yap",
+                          "fontFamily": "Merriweather",
+                          "fontSize": 14,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "oPpYK",
+                      "name": "hC2",
+                      "cornerRadius": 4,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#5C3A21"
+                      },
+                      "padding": [
+                        16,
+                        32
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "y8rHa",
+                          "fill": "#5C3A21",
+                          "content": "Menüyü Keşfet",
+                          "fontFamily": "Merriweather",
+                          "fontSize": 14,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "JjUJM",
+                  "name": "hMeta",
+                  "gap": 32,
+                  "padding": [
+                    16,
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "r5dG0",
+                      "name": "hm1",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "4RXln",
+                          "fill": "#C9622A",
+                          "content": "10+",
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 32,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "AeA6f",
+                          "fill": "#8A6A49",
+                          "content": "yıllık tecrübe",
+                          "fontFamily": "Merriweather",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "FVe4J",
+                      "name": "hm2",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "a5drh",
+                          "fill": "#C9622A",
+                          "content": "100%",
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 32,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "3yd6e",
+                          "fill": "#8A6A49",
+                          "content": "organik ürünler",
+                          "fontFamily": "Merriweather",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "x5WtV",
+                      "name": "hm3",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "KemdJ",
+                          "fill": "#C9622A",
+                          "content": "09–15",
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 32,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "7XmdZ",
+                          "fill": "#8A6A49",
+                          "content": "her gün açık",
+                          "fontFamily": "Merriweather",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "hrimx",
+              "name": "hR",
+              "width": "fill_container",
+              "height": 580,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./foto/kahvaltı_yeni.png",
+                "mode": "fill"
+              },
+              "cornerRadius": [
+                8,
+                240,
+                8,
+                240
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "9RpdK",
+          "name": "ab",
+          "width": "fill_container",
+          "fill": "#EADFCB",
+          "gap": 64,
+          "padding": [
+            100,
+            64
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "y4WYr",
+              "name": "abL",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "84Bad",
+                  "name": "abLimg",
+                  "width": "fill_container",
+                  "height": 540,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./foto/hakkımızda.jpg",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 8
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "arRhE",
+              "name": "abR",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "sLFlv",
+                  "fill": "#C9622A",
+                  "content": "— HAKKIMIZDA",
+                  "fontFamily": "Merriweather",
+                  "fontSize": 12,
+                  "fontWeight": "700",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "VbMYt",
+                  "fill": "#2E1D10",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Aile sofrasından, sizin sofranıza.",
+                  "lineHeight": 1.15,
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 44,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "gBO4g",
+                  "fill": "#6B4A2E",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Büyük bir çoğunluğu yöresinden sofralarımıza gelen ürünleri kullanarak ve çok emek vererek kendi bahçesinde bu küçük işletmeyi açan bir aileyiz. Sizlere özlediğiniz köy hayatında unutamayacağınız samimi, sıcak ve sağlıklı bir köy kahvaltısını sunmak ve memnuniyetinize sahip olmak için çalışıyoruz.",
+                  "lineHeight": 1.75,
+                  "fontFamily": "Merriweather",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "Ww8pV",
+                  "fill": "#6B4A2E",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Ankara şehir merkezine en yakın köylerden birinde, köy odalarında veya bahçede kahvaltı, yöresel lezzetler ve yöresel köy pazarında organik ürünleri tadına bakarak alma fırsatı sunuyoruz.",
+                  "lineHeight": 1.75,
+                  "fontFamily": "Merriweather",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "vCWPz",
+                  "fill": "#5C3A21",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Aile, arkadaş, iş toplantıları, iş yemekleri... Yöresel gıdaya hasret herkesi bekliyoruz.",
+                  "lineHeight": 1.75,
+                  "fontFamily": "Merriweather",
+                  "fontSize": 15,
+                  "fontWeight": "normal",
+                  "fontStyle": "italic"
+                },
+                {
+                  "type": "frame",
+                  "id": "exOfh",
+                  "name": "abBtn",
+                  "fill": "#5C3A21",
+                  "cornerRadius": 4,
+                  "padding": [
+                    14,
+                    28
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "wVWj0",
+                      "fill": "#FBF6EC",
+                      "content": "Bizimle İletişime Geçin",
+                      "fontFamily": "Merriweather",
+                      "fontSize": 14,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "cuz77",
+          "name": "pr",
+          "width": "fill_container",
+          "fill": "#F7EFE3",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            100,
+            64
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "ROA39",
+              "name": "prh",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 14,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "5N5mZ",
+                  "fill": "#C9622A",
+                  "content": "— YÖRESİNDEN GELEN ÜRÜNLERİMİZ",
+                  "fontFamily": "Merriweather",
+                  "fontSize": 12,
+                  "fontWeight": "700",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "A9cqp",
+                  "fill": "#2E1D10",
+                  "textGrowth": "fixed-width",
+                  "width": 900,
+                  "content": "Türkiye'nin dört bir yanından sofranıza.",
+                  "lineHeight": 1.15,
+                  "textAlign": "center",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 42,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "BJ9wp",
+                  "fill": "#6B4A2E",
+                  "textGrowth": "fixed-width",
+                  "width": 760,
+                  "content": "Sağlığınızı kendi sağlığımız gibi düşünerek çıktığımız bu yolda, %100 doğal organik besinleri yörelerinden temin ederek kahvaltımızda sizlere sunuyoruz. Beğendiğiniz ürünlerden hemen sipariş verebilirsiniz.",
+                  "lineHeight": 1.7,
+                  "textAlign": "center",
+                  "fontFamily": "Merriweather",
+                  "fontSize": 14,
+                  "fontWeight": "normal",
+                  "fontStyle": "italic"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "IrRzu",
+              "name": "pg1",
+              "width": "fill_container",
+              "height": 320,
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "TKM0L",
+                  "name": "c1",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "#FBF6EC",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#D9C7A8"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "C4s32",
+                      "width": "fill_container",
+                      "height": 200,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./foto/tereyağı.jpeg",
+                        "mode": "fill"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Fh8Dz",
+                      "name": "c1b",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ZhGq3",
+                          "fill": "#2E1D10",
+                          "content": "Trabzon Tereyağı",
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 19,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "LmUuh",
+                          "fill": "#C9622A",
+                          "content": "650₺",
+                          "fontFamily": "Merriweather",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "hv8Wq",
+                  "name": "c2",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "#FBF6EC",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#D9C7A8"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ck3fK",
+                      "width": "fill_container",
+                      "height": 200,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./foto/sucuk.PNG",
+                        "mode": "fill"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "IkIuh",
+                      "name": "c2b",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ol0zM",
+                          "fill": "#2E1D10",
+                          "content": "Afyon Dana Eti Sucuk",
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 19,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "JFDGa",
+                          "fill": "#C9622A",
+                          "content": "850₺",
+                          "fontFamily": "Merriweather",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "diZNv",
+                  "name": "c3",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "#FBF6EC",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#D9C7A8"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "MOzlQ",
+                      "width": "fill_container",
+                      "height": 200,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./foto/kaşar.jpg",
+                        "mode": "fill"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "inuQy",
+                      "name": "c3b",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "l4Kvy",
+                          "fill": "#2E1D10",
+                          "content": "Kars Taze Teker Kaşar",
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 19,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ExpR7",
+                          "fill": "#C9622A",
+                          "content": "650₺",
+                          "fontFamily": "Merriweather",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "wYjEX",
+                  "name": "c4",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "#FBF6EC",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#D9C7A8"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "uBZQS",
+                      "width": "fill_container",
+                      "height": 200,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./foto/tahin.jpg",
+                        "mode": "fill"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "H2GwL",
+                      "name": "c4b",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ozQAA",
+                          "fill": "#2E1D10",
+                          "content": "Konya Bozkır Tahin",
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 19,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "8o7HN",
+                          "fill": "#C9622A",
+                          "content": "325₺",
+                          "fontFamily": "Merriweather",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "tE2Lu",
+              "name": "pg2",
+              "width": "fill_container",
+              "height": 320,
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "vVxp8",
+                  "name": "c5",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "#FBF6EC",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#D9C7A8"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Sxq85",
+                      "width": "fill_container",
+                      "height": 200,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./foto/pekmez.jpg",
+                        "mode": "fill"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "bMI0G",
+                      "name": "c5b",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "udVbJ",
+                          "fill": "#2E1D10",
+                          "content": "Nevşehir Üzüm Pekmezi",
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 19,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pwflT",
+                          "fill": "#C9622A",
+                          "content": "275₺",
+                          "fontFamily": "Merriweather",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "W12Z1",
+                  "name": "c6",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "#FBF6EC",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#D9C7A8"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "cuAJ2",
+                      "width": "fill_container",
+                      "height": 200,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./foto/petek_bal.jpg",
+                        "mode": "fill"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "pz2Hu",
+                      "name": "c6b",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "YY5eI",
+                          "fill": "#2E1D10",
+                          "content": "Sivas Petek Bal",
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 19,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "dbqEf",
+                          "fill": "#C9622A",
+                          "content": "550₺",
+                          "fontFamily": "Merriweather",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "nR3Px",
+                  "name": "c7",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "#FBF6EC",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#D9C7A8"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "R7rdg",
+                      "width": "fill_container",
+                      "height": 200,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./foto/zeytinyağı.jpg",
+                        "mode": "fill"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "zd7wB",
+                      "name": "c7b",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ggQb4",
+                          "fill": "#2E1D10",
+                          "content": "Balıkesir Soğuk Sıkım Zeytinyağı",
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Rw2CS",
+                          "fill": "#C9622A",
+                          "content": "375₺",
+                          "fontFamily": "Merriweather",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "gSbZT",
+                  "name": "c8",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "#FBF6EC",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#D9C7A8"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "PvRzB",
+                      "width": "fill_container",
+                      "height": 200,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./foto/peynir.jpg",
+                        "mode": "fill"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "xpAVV",
+                      "name": "c8b",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Nz66N",
+                          "fill": "#2E1D10",
+                          "content": "Hatay Yöresel Peynirleri",
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 19,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "0Q0jD",
+                          "fill": "#C9622A",
+                          "content": "550₺",
+                          "fontFamily": "Merriweather",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Ho2Aq",
+              "name": "pg3",
+              "width": "fill_container",
+              "height": 320,
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "rxN3h",
+                  "name": "c9",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "#FBF6EC",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#D9C7A8"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "kuCzX",
+                      "width": "fill_container",
+                      "height": 200,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./foto/süzme_bal.png",
+                        "mode": "fill"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "kr6iG",
+                      "name": "c9b",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "A3BoS",
+                          "fill": "#2E1D10",
+                          "content": "Bitlis/Sivas Süzme Bal",
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 19,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ytN5y",
+                          "fill": "#C9622A",
+                          "content": "600₺",
+                          "fontFamily": "Merriweather",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "owJiz",
+                  "name": "c10",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "#FBF6EC",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#D9C7A8"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "d5ZZ7",
+                      "width": "fill_container",
+                      "height": 200,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./foto/tulum.jpg",
+                        "mode": "fill"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "5PWc9",
+                      "name": "c10b",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "8RSMw",
+                          "fill": "#2E1D10",
+                          "content": "Erzincan Koyun Tulum",
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 19,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "XxWgV",
+                          "fill": "#C9622A",
+                          "content": "750₺",
+                          "fontFamily": "Merriweather",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "sQST8",
+                  "name": "c11",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "#FBF6EC",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#D9C7A8"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Q917g",
+                      "width": "fill_container",
+                      "height": 200,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./foto/çeçil.jpg",
+                        "mode": "fill"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "zGPqW",
+                      "name": "c11b",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "vY1k3",
+                          "fill": "#2E1D10",
+                          "content": "Kars Çeçil Peyniri",
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 19,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "RQkH1",
+                          "fill": "#C9622A",
+                          "content": "450₺",
+                          "fontFamily": "Merriweather",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "r2XvK",
+                  "name": "c12",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "#FBF6EC",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#D9C7A8"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "i1BW2",
+                      "width": "fill_container",
+                      "height": 200,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./foto/zeytin.jpg",
+                        "mode": "fill"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "MAXo8",
+                      "name": "c12b",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "bdVWs",
+                          "fill": "#2E1D10",
+                          "content": "Gemlik Siyah/Yeşil Zeytin",
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 19,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "8Ch8S",
+                          "fill": "#C9622A",
+                          "content": "250₺ – 350₺",
+                          "fontFamily": "Merriweather",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "oINz1",
+              "name": "pg4",
+              "width": "fill_container",
+              "height": 320,
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ah3iK",
+                  "name": "c13",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "#FBF6EC",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#D9C7A8"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "PhhpE",
+                      "width": "fill_container",
+                      "height": 200,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./foto/salça.jpg",
+                        "mode": "fill"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "E5TAJ",
+                      "name": "c13b",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ZEIFh",
+                          "fill": "#2E1D10",
+                          "content": "Gaziantep Salça (Domates/Biber)",
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "aQSgP",
+                          "fill": "#C9622A",
+                          "content": "175₺ – 225₺",
+                          "fontFamily": "Merriweather",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "sVx0t",
+                  "name": "c14",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "#FBF6EC",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#D9C7A8"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "mGR4O",
+                      "width": "fill_container",
+                      "height": 200,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./foto/keçiboynuzu_pekmezi.jpg",
+                        "mode": "fill"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "eJBX1",
+                      "name": "c14b",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "R4h5R",
+                          "fill": "#2E1D10",
+                          "content": "Gaziantep Keçiboynuzu Özü",
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "jXcM6",
+                          "fill": "#C9622A",
+                          "content": "350₺",
+                          "fontFamily": "Merriweather",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "dhtIw",
+                  "name": "c15",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "#FBF6EC",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#D9C7A8"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "BY9Cg",
+                      "width": "fill_container",
+                      "height": 200,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./foto/karadut_özü.jpg",
+                        "mode": "fill"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "aWTAr",
+                      "name": "c15b",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "neZ4R",
+                          "fill": "#2E1D10",
+                          "content": "Gaziantep Karadut Özü",
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 19,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "9BxVO",
+                          "fill": "#C9622A",
+                          "content": "350₺",
+                          "fontFamily": "Merriweather",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "W9WRR",
+                  "name": "c16",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "#FBF6EC",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#D9C7A8"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "W5zdN",
+                      "width": "fill_container",
+                      "height": 200,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./foto/baharat.jpg",
+                        "mode": "fill"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dyKFj",
+                      "name": "c16b",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Wvg1Y",
+                          "fill": "#2E1D10",
+                          "content": "Gaziantep Baharat Çeşitleri",
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "1Ouxy",
+                          "fill": "#C9622A",
+                          "content": "100₺ / paket",
+                          "fontFamily": "Merriweather",
+                          "fontSize": 15,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "VORl1",
+          "name": "wy",
+          "width": "fill_container",
+          "height": 540,
+          "fill": "#2E1D10",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            100,
+            64
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "gglUt",
+              "layoutPosition": "absolute",
+              "x": 0,
+              "y": 0,
+              "name": "wov",
+              "width": 1440,
+              "height": 540,
+              "fill": {
+                "type": "image",
+                "opacity": 0.25,
+                "enabled": true,
+                "url": "./foto/mangal.jpg",
+                "mode": "fill"
+              }
+            },
+            {
+              "type": "frame",
+              "id": "Uk7Ve",
+              "name": "wh",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Rh3N4",
+                  "fill": "#E9A36B",
+                  "content": "— NEDEN BİZ",
+                  "fontFamily": "Merriweather",
+                  "fontSize": 12,
+                  "fontWeight": "700",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "6QIYq",
+                  "fill": "#FBF6EC",
+                  "textGrowth": "fixed-width",
+                  "width": 900,
+                  "content": "Doğadan sofranıza bir deneyim.",
+                  "lineHeight": 1.15,
+                  "textAlign": "center",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 42,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "LIdmt",
+              "name": "wr",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "F1i0X",
+                  "name": "w1",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF14",
+                  "cornerRadius": 4,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#FFFFFF1F"
+                  },
+                  "layout": "vertical",
+                  "gap": 14,
+                  "padding": 28,
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "VEc5m",
+                      "width": 28,
+                      "height": 28,
+                      "iconFontName": "utensils",
+                      "iconFontFamily": "lucide",
+                      "fill": "#E9A36B"
+                    },
+                    {
+                      "type": "text",
+                      "id": "WQSoS",
+                      "fill": "#FBF6EC",
+                      "content": "Lezzet",
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 22,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Sh2TO",
+                      "fill": "#D9C7A8",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Türkiye'nin farklı yerlerinden gelen doğal ve lezzetli ürünler ile sizlere sağlıklı bir kahvaltı sunuyoruz.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "Merriweather",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "RVLXc",
+                  "name": "w2",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF14",
+                  "cornerRadius": 4,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#FFFFFF1F"
+                  },
+                  "layout": "vertical",
+                  "gap": 14,
+                  "padding": 28,
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "TXNjp",
+                      "width": 28,
+                      "height": 28,
+                      "iconFontName": "trees",
+                      "iconFontFamily": "lucide",
+                      "fill": "#E9A36B"
+                    },
+                    {
+                      "type": "text",
+                      "id": "BXSnd",
+                      "fill": "#FBF6EC",
+                      "content": "Çevre",
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 22,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "BVgUX",
+                      "fill": "#D9C7A8",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Sessiz, sakin, huzur verici ve ağaçların arasında unutamayacağınız bir köy mekanı sizleri bekliyor.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "Merriweather",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "MsPt6",
+                  "name": "w3",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF14",
+                  "cornerRadius": 4,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#FFFFFF1F"
+                  },
+                  "layout": "vertical",
+                  "gap": 14,
+                  "padding": 28,
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "PRoki",
+                      "width": 28,
+                      "height": 28,
+                      "iconFontName": "users",
+                      "iconFontFamily": "lucide",
+                      "fill": "#E9A36B"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Kl3YE",
+                      "fill": "#FBF6EC",
+                      "content": "Ortam",
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 22,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "0vlIx",
+                      "fill": "#D9C7A8",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Çocuklarınız parkta eğlenirken sizin de vakit geçirebileceğiniz rahat ve doğal bir aile ortamı.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "Merriweather",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "wl4Sj",
+                  "name": "w4",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF14",
+                  "cornerRadius": 4,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#FFFFFF1F"
+                  },
+                  "layout": "vertical",
+                  "gap": 14,
+                  "padding": 28,
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "gFXEa",
+                      "width": 28,
+                      "height": 28,
+                      "iconFontName": "flame",
+                      "iconFontFamily": "lucide",
+                      "fill": "#E9A36B"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ec3gh",
+                      "fill": "#FBF6EC",
+                      "content": "Size Özel",
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 22,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "JjOdR",
+                      "fill": "#D9C7A8",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Kendin pişir kendin ye konseptimiz sayesinde, sevdikleriniz ile mangal keyfi yapma imkanı.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "Merriweather",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "zpINC",
+          "name": "mn",
+          "width": "fill_container",
+          "fill": "#F7EFE3",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            100,
+            64
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "qvUzM",
+              "name": "mh",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "80Fqi",
+                  "fill": "#C9622A",
+                  "content": "— MENÜMÜZ",
+                  "fontFamily": "Merriweather",
+                  "fontSize": 12,
+                  "fontWeight": "700",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "Y3Fp5",
+                  "fill": "#2E1D10",
+                  "textGrowth": "fixed-width",
+                  "width": 900,
+                  "content": "Ankara'da gerçek köy kahvaltısı.",
+                  "lineHeight": 1.15,
+                  "textAlign": "center",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 42,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "0KjqW",
+                  "fill": "#6B4A2E",
+                  "textGrowth": "fixed-width",
+                  "width": 760,
+                  "content": "Ankara'da gerçek köy kahvaltısı ve organik ürün pazarının olduğunu biliyor muydunuz? Bilmiyorsanız tam yerine geldiniz.",
+                  "lineHeight": 1.7,
+                  "textAlign": "center",
+                  "fontFamily": "Merriweather",
+                  "fontSize": 14,
+                  "fontWeight": "normal",
+                  "fontStyle": "italic"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "aNDlE",
+              "name": "mgrid",
+              "width": "fill_container",
+              "gap": 48,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "cvDgL",
+                  "name": "mL",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 40,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "FEdv4",
+                      "name": "ct1",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 14,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "DKe6N",
+                          "fill": "#5C3A21",
+                          "content": "Geleneksel Favoriler",
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 26,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "ViS6k",
+                          "fill": "#C9622A",
+                          "width": 60,
+                          "height": 2
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Baw3J",
+                          "name": "ct1L",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 10,
+                          "padding": [
+                            6,
+                            0,
+                            0,
+                            0
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "HFJs9",
+                              "fill": "#2E1D10",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Serpme Kahvaltı — 09:00–15:00 arası (en az 2 kişi)",
+                              "lineHeight": 1.6,
+                              "fontFamily": "Merriweather",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "Vw4eC",
+                              "fill": "#2E1D10",
+                              "content": "Yeşillik ve Peynir Tabağı",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "YuewH",
+                              "fill": "#2E1D10",
+                              "content": "Hamur İşi Tabağı",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "qDwiw",
+                              "fill": "#2E1D10",
+                              "content": "Anne Patatesi (sade/karışık)",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "gM6Uf",
+                              "fill": "#2E1D10",
+                              "content": "Kuymak",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "55CLm",
+                      "name": "ct2",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 14,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "P5c7p",
+                          "fill": "#5C3A21",
+                          "content": "Menemen",
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 26,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "MJB3g",
+                          "fill": "#C9622A",
+                          "width": 60,
+                          "height": 2
+                        },
+                        {
+                          "type": "frame",
+                          "id": "lv3Lv",
+                          "name": "ct2L",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 10,
+                          "padding": [
+                            6,
+                            0,
+                            0,
+                            0
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "6Hfjx",
+                              "fill": "#2E1D10",
+                              "content": "Sade Menemen",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "9m6ue",
+                              "fill": "#2E1D10",
+                              "content": "Sucuklu Menemen",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "fMOt4",
+                              "fill": "#2E1D10",
+                              "content": "Kıymalı Menemen",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "E0N1u",
+                              "fill": "#2E1D10",
+                              "content": "Kavurmalı Menemen",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "SNaFx",
+                      "name": "ct3",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 14,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "JiX5k",
+                          "name": "ct3h",
+                          "gap": 10,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Cmz8G",
+                              "fill": "#5C3A21",
+                              "content": "Kendin Pişir, Kendin Ye",
+                              "fontFamily": "Playfair Display",
+                              "fontSize": 26,
+                              "fontWeight": "700"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "5IC8R",
+                              "name": "sb",
+                              "fill": "#C9622A",
+                              "cornerRadius": 12,
+                              "padding": [
+                                4,
+                                10
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "CP0EN",
+                                  "fill": "#FBF6EC",
+                                  "content": "YAZ SEZONU",
+                                  "fontFamily": "Merriweather",
+                                  "fontSize": 10,
+                                  "fontWeight": "700",
+                                  "letterSpacing": 1
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "KVvzx",
+                          "fill": "#C9622A",
+                          "width": 60,
+                          "height": 2
+                        },
+                        {
+                          "type": "frame",
+                          "id": "7131q",
+                          "name": "ct3L",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 10,
+                          "padding": [
+                            6,
+                            0,
+                            0,
+                            0
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "ilF2p",
+                              "fill": "#2E1D10",
+                              "content": "Mangal — 17:00–22:00 (5 kişilik servis dahil)",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "Pkmpo",
+                              "fill": "#2E1D10",
+                              "content": "Çoban Salata (5 kişilik)",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "KEpUy",
+                              "fill": "#2E1D10",
+                              "content": "Demlikte Çay",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "fvO4N",
+                              "fill": "#2E1D10",
+                              "content": "Semaverde Çay",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "HGtG5",
+                      "name": "ct4",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 14,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "CCimB",
+                          "fill": "#5C3A21",
+                          "content": "Yumurta",
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 26,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "uvgKw",
+                          "fill": "#C9622A",
+                          "width": 60,
+                          "height": 2
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Btnpc",
+                          "name": "ct4L",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 10,
+                          "padding": [
+                            6,
+                            0,
+                            0,
+                            0
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "DU6Bl",
+                              "fill": "#2E1D10",
+                              "content": "Sahanda Tereyağlı Yumurta",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "p9Ozu",
+                              "fill": "#2E1D10",
+                              "content": "Sahanda Sucuk",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "podgc",
+                              "fill": "#2E1D10",
+                              "content": "Sucuklu Yumurta",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "XvAiE",
+                              "fill": "#2E1D10",
+                              "content": "Kıymalı Yumurta",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "zxvNL",
+                              "fill": "#2E1D10",
+                              "content": "Kavurmalı Yumurta",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "fbpty",
+                  "name": "mR",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 40,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "TMe0P",
+                      "name": "ct5",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 14,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "WMLzF",
+                          "fill": "#5C3A21",
+                          "content": "Hamur İşleri",
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 26,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "BPCC7",
+                          "fill": "#C9622A",
+                          "width": 60,
+                          "height": 2
+                        },
+                        {
+                          "type": "frame",
+                          "id": "SI8ja",
+                          "name": "ct5L",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 10,
+                          "padding": [
+                            6,
+                            0,
+                            0,
+                            0
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Zcoqn",
+                              "fill": "#2E1D10",
+                              "content": "Yağlı / Yağsız Bazlama",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "CMeYo",
+                              "fill": "#2E1D10",
+                              "content": "Katmer (sade / peynirli porsiyon)",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "XpEys",
+                              "fill": "#2E1D10",
+                              "content": "Köy Çöreği (porsiyon)",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "9oFTy",
+                              "fill": "#2E1D10",
+                              "content": "Sigara Böreği (6'lı porsiyon, patatesli)",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "wRzao",
+                              "fill": "#2E1D10",
+                              "content": "Pişi (6'lı porsiyon)",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "WicIY",
+                      "name": "ct6",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 14,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "z9jKl",
+                          "name": "ct6h",
+                          "layout": "vertical",
+                          "gap": 6,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "dynOS",
+                              "fill": "#5C3A21",
+                              "content": "Tost",
+                              "fontFamily": "Playfair Display",
+                              "fontSize": 26,
+                              "fontWeight": "700"
+                            },
+                            {
+                              "type": "text",
+                              "id": "rB59m",
+                              "fill": "#8A6A49",
+                              "content": "Ekmek veya bazlama tercih edebilirsiniz.",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 12,
+                              "fontWeight": "normal",
+                              "fontStyle": "italic"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "jXrXc",
+                          "fill": "#C9622A",
+                          "width": 60,
+                          "height": 2
+                        },
+                        {
+                          "type": "frame",
+                          "id": "sjYqG",
+                          "name": "ct6L",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 10,
+                          "padding": [
+                            6,
+                            0,
+                            0,
+                            0
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "BMxFU",
+                              "fill": "#2E1D10",
+                              "content": "Kaşarlı Tost",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "OYWWh",
+                              "fill": "#2E1D10",
+                              "content": "Sucuklu Tost",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "tTm8i",
+                              "fill": "#2E1D10",
+                              "content": "Karışık Tost (sucuklu & kaşarlı)",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "yBXxN",
+                              "fill": "#2E1D10",
+                              "content": "Kavurmalı Kaşarlı Tost",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "MgsET",
+                      "name": "ct7",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 14,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "c8yZB",
+                          "fill": "#5C3A21",
+                          "content": "Sıcak İçecekler",
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 26,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "tkm5H",
+                          "fill": "#C9622A",
+                          "width": 60,
+                          "height": 2
+                        },
+                        {
+                          "type": "frame",
+                          "id": "A69aU",
+                          "name": "ct7L",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 10,
+                          "padding": [
+                            6,
+                            0,
+                            0,
+                            0
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "KlPRN",
+                              "fill": "#2E1D10",
+                              "content": "Bardakta Çay",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "ggw28",
+                              "fill": "#2E1D10",
+                              "content": "Türk Kahvesi / Dibek Kahvesi",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "QpkeV",
+                              "fill": "#2E1D10",
+                              "content": "Duble Türk Kahvesi / Dibek",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "P6vwp",
+                              "fill": "#2E1D10",
+                              "content": "Sütlü Türk Kahvesi",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "gyYQs",
+                              "fill": "#2E1D10",
+                              "content": "3'ü 1 Arada / 2'si 1 Arada",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "t2wRS",
+                              "fill": "#2E1D10",
+                              "content": "Sıcak Çikolata",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "tR9dy",
+                              "fill": "#2E1D10",
+                              "content": "Sahlep",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ofl48",
+                      "name": "ct8",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 14,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "yAhXd",
+                          "fill": "#5C3A21",
+                          "content": "Soğuk İçecekler",
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 26,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "ji2Ju",
+                          "fill": "#C9622A",
+                          "width": 60,
+                          "height": 2
+                        },
+                        {
+                          "type": "frame",
+                          "id": "aa2PS",
+                          "name": "ct8L",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 10,
+                          "padding": [
+                            6,
+                            0,
+                            0,
+                            0
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "T8t3g",
+                              "fill": "#2E1D10",
+                              "content": "Su",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "DbUR7",
+                              "fill": "#2E1D10",
+                              "content": "Açık Ayran",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "lTixC",
+                              "fill": "#2E1D10",
+                              "content": "Sıkma Portakal Suyu",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "V2av6",
+                              "fill": "#2E1D10",
+                              "content": "Churchill",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "a1iDS",
+                              "fill": "#2E1D10",
+                              "content": "Şişe Gazoz",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "oxTAV",
+                              "fill": "#2E1D10",
+                              "content": "Teneke Kola / Fanta / Ice Tea",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "cNKlt",
+                              "fill": "#2E1D10",
+                              "content": "Kutu Süt & Meyve Suyu Çeşitleri",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "KezDl",
+                              "fill": "#2E1D10",
+                              "content": "Sade / Meyveli Soda",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "KvK0w",
+          "name": "ev",
+          "width": "fill_container",
+          "fill": "#EADFCB",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            100,
+            64
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "05NOh",
+              "name": "evh",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ps82F",
+                  "fill": "#C9622A",
+                  "content": "— ORGANİZASYONLAR",
+                  "fontFamily": "Merriweather",
+                  "fontSize": 12,
+                  "fontWeight": "700",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "tsFEx",
+                  "fill": "#2E1D10",
+                  "textGrowth": "fixed-width",
+                  "width": 900,
+                  "content": "Bizde gerçekleşen özel anlar.",
+                  "lineHeight": 1.15,
+                  "textAlign": "center",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 42,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "2usLW",
+                  "fill": "#6B4A2E",
+                  "textGrowth": "fixed-width",
+                  "width": 760,
+                  "content": "Özel günlerinizde bizi tercih ettiğiniz için teşekkür ederiz. Gelecekteki organizasyonlarımıza da davetli olduğunuzu bilmenizi isteriz.",
+                  "lineHeight": 1.7,
+                  "textAlign": "center",
+                  "fontFamily": "Merriweather",
+                  "fontSize": 14,
+                  "fontWeight": "normal",
+                  "fontStyle": "italic"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "7oiTP",
+              "name": "evr1",
+              "width": "fill_container",
+              "height": 300,
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "j1k0A",
+                  "name": "e1",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "#FBF6EC",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#D9C7A8"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "tGUZa",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./foto/öğretmen.jpg",
+                        "mode": "fill"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "fWVEU",
+                      "name": "e1b",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "l2o4H",
+                          "fill": "#2E1D10",
+                          "content": "Öğretmenler Buluşması",
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 17,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "UWei2",
+                          "fill": "#8A6A49",
+                          "content": "16 Haziran 2023",
+                          "fontFamily": "Merriweather",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "mzX1L",
+                  "name": "e2",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "#FBF6EC",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#D9C7A8"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "wMiCJ",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./foto/evlilik_teklifi.jpg",
+                        "mode": "fill"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "c7Gi5",
+                      "name": "e2b",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "xpvdj",
+                          "fill": "#2E1D10",
+                          "content": "Evlilik Teklifi",
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 17,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "vx6cR",
+                          "fill": "#8A6A49",
+                          "content": "17 Haziran 2023",
+                          "fontFamily": "Merriweather",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "voB6c",
+                  "name": "e3",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "#FBF6EC",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#D9C7A8"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "80thI",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./foto/mangal_partisi.jpg",
+                        "mode": "fill"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "HjuOQ",
+                      "name": "e3b",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "t5hrG",
+                          "fill": "#2E1D10",
+                          "content": "İlk Mangal Partisi",
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 17,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "APfae",
+                          "fill": "#8A6A49",
+                          "content": "8 Temmuz 2023",
+                          "fontFamily": "Merriweather",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "jdD5T",
+              "name": "evr2",
+              "width": "fill_container",
+              "height": 300,
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "MWxa5",
+                  "name": "e4",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "#FBF6EC",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#D9C7A8"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ydnAf",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./foto/doğum_günü.jpg",
+                        "mode": "fill"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "YJeUH",
+                      "name": "e4b",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "OgtKR",
+                          "fill": "#2E1D10",
+                          "content": "Doğum Günü Partisi",
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 17,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "fNUvk",
+                          "fill": "#8A6A49",
+                          "content": "9 Temmuz 2023",
+                          "fontFamily": "Merriweather",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "DJSWl",
+                  "name": "e5",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "#FBF6EC",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#D9C7A8"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ttMwK",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./foto/evlilik_yıldönümü.jpg",
+                        "mode": "fill"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "epTvc",
+                      "name": "e5b",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "wgk9O",
+                          "fill": "#2E1D10",
+                          "content": "Evlilik Yıl Dönümü",
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 17,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "XJEy7",
+                          "fill": "#8A6A49",
+                          "content": "20 Temmuz 2023",
+                          "fontFamily": "Merriweather",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "77nbN",
+                  "name": "e6",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "#5C3A21",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 32,
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "9xT6g",
+                      "width": 32,
+                      "height": 32,
+                      "iconFontName": "calendar-heart",
+                      "iconFontFamily": "lucide",
+                      "fill": "#E9A36B"
+                    },
+                    {
+                      "type": "text",
+                      "id": "25ULE",
+                      "fill": "#FBF6EC",
+                      "content": "Grup Rezervasyonu",
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 22,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "9GZEC",
+                      "fill": "#D9C7A8",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Özel günleriniz için mekanı ayırtın. Detaylar için bizi arayın.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "Merriweather",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "meOIZ",
+                      "name": "e6b",
+                      "fill": "#C9622A",
+                      "cornerRadius": 4,
+                      "padding": [
+                        12,
+                        20
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "dXSNr",
+                          "fill": "#FBF6EC",
+                          "content": "0538 678 7938",
+                          "fontFamily": "Merriweather",
+                          "fontSize": 13,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "rDnFT",
+          "name": "rz",
+          "width": "fill_container",
+          "fill": "#F7EFE3",
+          "gap": 56,
+          "padding": [
+            100,
+            64
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "hCyxM",
+              "name": "rzL",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "J1YLl",
+                  "fill": "#C9622A",
+                  "content": "— REZERVASYON",
+                  "fontFamily": "Merriweather",
+                  "fontSize": 12,
+                  "fontWeight": "700",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "2aokm",
+                  "fill": "#2E1D10",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Hemen yerinizi ayıralım.",
+                  "lineHeight": 1.1,
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 46,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "HgWNS",
+                  "fill": "#6B4A2E",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Siz de bizim aramıza katılmak ve bu güzel mekanın tadını sevdiklerinizle çıkarmak isterseniz bizimle iletişime geçebilirsiniz. Serpme kahvaltı rezervasyonları 09:00–15:00 arası alınmaktadır.",
+                  "lineHeight": 1.75,
+                  "fontFamily": "Merriweather",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "NPSVk",
+                  "name": "info",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": [
+                    8,
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "mJ3Sg",
+                      "name": "it1",
+                      "gap": 14,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "2ycJs",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "map-pin",
+                          "iconFontFamily": "lucide",
+                          "fill": "#C9622A"
+                        },
+                        {
+                          "type": "text",
+                          "id": "sFiAm",
+                          "fill": "#2E1D10",
+                          "content": "Kızılca Mahallesi Günay Caddesi No:13 Mamak/ANKARA",
+                          "fontFamily": "Merriweather",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "KG3lE",
+                      "name": "it2",
+                      "gap": 14,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "7zew6",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "phone",
+                          "iconFontFamily": "lucide",
+                          "fill": "#C9622A"
+                        },
+                        {
+                          "type": "text",
+                          "id": "5rAXH",
+                          "fill": "#2E1D10",
+                          "content": "0538 678 7938",
+                          "fontFamily": "Merriweather",
+                          "fontSize": 14,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Qh2ST",
+                      "name": "it3",
+                      "gap": 14,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "sqBs7",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "mail",
+                          "iconFontFamily": "lucide",
+                          "fill": "#C9622A"
+                        },
+                        {
+                          "type": "text",
+                          "id": "2nah1",
+                          "fill": "#2E1D10",
+                          "content": "gahvaltiankara@gmail.com",
+                          "fontFamily": "Merriweather",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "udJkl",
+                      "name": "it4",
+                      "gap": 14,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "4w9TS",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "globe",
+                          "iconFontFamily": "lucide",
+                          "fill": "#C9622A"
+                        },
+                        {
+                          "type": "text",
+                          "id": "X0F9T",
+                          "fill": "#2E1D10",
+                          "content": "www.gahvaltiankara.com.tr",
+                          "fontFamily": "Merriweather",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "VDsJb",
+                      "name": "it5",
+                      "gap": 14,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "mzouG",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "clock-3",
+                          "iconFontFamily": "lucide",
+                          "fill": "#C9622A"
+                        },
+                        {
+                          "type": "text",
+                          "id": "0bT0O",
+                          "fill": "#2E1D10",
+                          "content": "Her gün · 09:00 – 15:00",
+                          "fontFamily": "Merriweather",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "2oLvH",
+                  "name": "noteBox",
+                  "width": "fill_container",
+                  "fill": "#FFF4D6",
+                  "cornerRadius": 4,
+                  "stroke": {
+                    "thickness": {
+                      "left": 3
+                    },
+                    "fill": "#C9622A"
+                  },
+                  "gap": 12,
+                  "padding": 16,
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "a07p2",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "info",
+                      "iconFontFamily": "lucide",
+                      "fill": "#C9622A"
+                    },
+                    {
+                      "type": "text",
+                      "id": "WvxEN",
+                      "fill": "#5C3A21",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Grup rezervasyonları için lütfen bizimle iletişime geçiniz.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Merriweather",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "AXvQP",
+              "name": "rzR",
+              "width": "fill_container",
+              "fill": "#FBF6EC",
+              "cornerRadius": 4,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#D9C7A8"
+              },
+              "layout": "vertical",
+              "gap": 18,
+              "padding": 40,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "yB4q1",
+                  "fill": "#2E1D10",
+                  "content": "Rezervasyon Formu",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 26,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "EQo4P",
+                  "name": "f1",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "MRZeg",
+                      "fill": "#6B4A2E",
+                      "content": "İsim Soyisim",
+                      "fontFamily": "Merriweather",
+                      "fontSize": 12,
+                      "fontWeight": "700",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "XOK4A",
+                      "width": "fill_container",
+                      "height": 44,
+                      "fill": "#F7EFE3",
+                      "cornerRadius": 4,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#D9C7A8"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "jqoRO",
+                  "name": "f2",
+                  "width": "fill_container",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "biaEW",
+                      "name": "f2a",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "amx5I",
+                          "fill": "#6B4A2E",
+                          "content": "Telefon",
+                          "fontFamily": "Merriweather",
+                          "fontSize": 12,
+                          "fontWeight": "700",
+                          "letterSpacing": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "ciFza",
+                          "width": "fill_container",
+                          "height": 44,
+                          "fill": "#F7EFE3",
+                          "cornerRadius": 4,
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "#D9C7A8"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ULrZN",
+                      "name": "f2b",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "eRrxN",
+                          "fill": "#6B4A2E",
+                          "content": "Kişi Sayısı",
+                          "fontFamily": "Merriweather",
+                          "fontSize": 12,
+                          "fontWeight": "700",
+                          "letterSpacing": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "elPtv",
+                          "width": "fill_container",
+                          "height": 44,
+                          "fill": "#F7EFE3",
+                          "cornerRadius": 4,
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "#D9C7A8"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "lUGHe",
+                  "name": "f3",
+                  "width": "fill_container",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "8h4FT",
+                      "name": "f3a",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "nQDyy",
+                          "fill": "#6B4A2E",
+                          "content": "Tarih & Saat",
+                          "fontFamily": "Merriweather",
+                          "fontSize": 12,
+                          "fontWeight": "700",
+                          "letterSpacing": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "1WceE",
+                          "width": "fill_container",
+                          "height": 44,
+                          "fill": "#F7EFE3",
+                          "cornerRadius": 4,
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "#D9C7A8"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "MPZx0",
+                      "name": "f3b",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "R65FO",
+                          "fill": "#6B4A2E",
+                          "content": "Organizasyon Tipi",
+                          "fontFamily": "Merriweather",
+                          "fontSize": 12,
+                          "fontWeight": "700",
+                          "letterSpacing": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "4D1QA",
+                          "width": "fill_container",
+                          "height": 44,
+                          "fill": "#F7EFE3",
+                          "cornerRadius": 4,
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "#D9C7A8"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "shJCI",
+                  "name": "f4",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "cRffM",
+                      "fill": "#6B4A2E",
+                      "content": "Mesaj",
+                      "fontFamily": "Merriweather",
+                      "fontSize": 12,
+                      "fontWeight": "700",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dPePM",
+                      "width": "fill_container",
+                      "height": 100,
+                      "fill": "#F7EFE3",
+                      "cornerRadius": 4,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#D9C7A8"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "gnaOZ",
+                  "name": "fbtn",
+                  "width": "fill_container",
+                  "fill": "#C9622A",
+                  "cornerRadius": 4,
+                  "padding": [
+                    14,
+                    0
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "44usF",
+                      "fill": "#FBF6EC",
+                      "content": "Rezervasyon Gönder",
+                      "fontFamily": "Merriweather",
+                      "fontSize": 14,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "oqk6d",
+          "name": "loc",
+          "width": "fill_container",
+          "fill": "#EADFCB",
+          "layout": "vertical",
+          "gap": 40,
+          "padding": [
+            100,
+            64
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "vd334",
+              "name": "lh",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Slgcc",
+                  "fill": "#C9622A",
+                  "content": "— KONUM",
+                  "fontFamily": "Merriweather",
+                  "fontSize": 12,
+                  "fontWeight": "700",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "BemFa",
+                  "fill": "#2E1D10",
+                  "textGrowth": "fixed-width",
+                  "width": 900,
+                  "content": "Bizi Ankara'da bulun.",
+                  "lineHeight": 1.15,
+                  "textAlign": "center",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 42,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "AAeug",
+                  "fill": "#6B4A2E",
+                  "textGrowth": "fixed-width",
+                  "width": 760,
+                  "content": "Mamak, Kızılca Mahallesi'nde şehre yakın bir köy ortamında sizi bekliyoruz. Google Maps'te \"gahvaltiankara\" olarak aratabilirsiniz.",
+                  "lineHeight": 1.7,
+                  "textAlign": "center",
+                  "fontFamily": "Merriweather",
+                  "fontSize": 14,
+                  "fontWeight": "normal",
+                  "fontStyle": "italic"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "AzEor",
+              "name": "body",
+              "width": "fill_container",
+              "height": 440,
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "8s1QL",
+                  "name": "mapWrap",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "#D9E3D2",
+                  "cornerRadius": 8,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#D9C7A8"
+                  },
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "FQO12",
+                      "layoutPosition": "absolute",
+                      "x": 0,
+                      "y": 0,
+                      "name": "mapBg",
+                      "width": 880,
+                      "height": 440,
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "rotation": 135,
+                        "size": {
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "#E3E8D6",
+                            "position": 0
+                          },
+                          {
+                            "color": "#C9D4B6",
+                            "position": 1
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "cnzlM",
+                      "layoutPosition": "absolute",
+                      "x": 0,
+                      "y": 160,
+                      "name": "road1",
+                      "fill": "#FBF6EC",
+                      "width": 880,
+                      "height": 14
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "XcZiZ",
+                      "layoutPosition": "absolute",
+                      "x": 0,
+                      "y": 290,
+                      "name": "road2",
+                      "fill": "#FBF6EC",
+                      "width": 880,
+                      "height": 10
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "Wj9r7",
+                      "layoutPosition": "absolute",
+                      "x": 300,
+                      "y": 0,
+                      "name": "road3",
+                      "fill": "#FBF6EC",
+                      "width": 10,
+                      "height": 440
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "39aSX",
+                      "layoutPosition": "absolute",
+                      "x": 560,
+                      "y": 0,
+                      "name": "road4",
+                      "fill": "#FBF6EC",
+                      "width": 12,
+                      "height": 440
+                    },
+                    {
+                      "type": "frame",
+                      "id": "QXJDF",
+                      "layoutPosition": "absolute",
+                      "x": 60,
+                      "y": 200,
+                      "name": "park",
+                      "width": 220,
+                      "height": 80,
+                      "fill": "#A9BF8A",
+                      "cornerRadius": 12
+                    },
+                    {
+                      "type": "frame",
+                      "id": "4qg3U",
+                      "layoutPosition": "absolute",
+                      "x": 330,
+                      "y": 40,
+                      "name": "block1",
+                      "width": 210,
+                      "height": 110,
+                      "fill": "#EFE7D4",
+                      "cornerRadius": 6
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ZTlPI",
+                      "layoutPosition": "absolute",
+                      "x": 600,
+                      "y": 40,
+                      "name": "block2",
+                      "width": 240,
+                      "height": 110,
+                      "fill": "#EFE7D4",
+                      "cornerRadius": 6
+                    },
+                    {
+                      "type": "frame",
+                      "id": "6bc7i",
+                      "layoutPosition": "absolute",
+                      "x": 600,
+                      "y": 320,
+                      "name": "block3",
+                      "width": 240,
+                      "height": 100,
+                      "fill": "#EFE7D4",
+                      "cornerRadius": 6
+                    },
+                    {
+                      "type": "frame",
+                      "id": "7ZA8a",
+                      "layoutPosition": "absolute",
+                      "x": 426,
+                      "y": 196,
+                      "name": "pin",
+                      "width": 48,
+                      "height": 48,
+                      "fill": "#C9622A",
+                      "cornerRadius": 24,
+                      "stroke": {
+                        "thickness": 4,
+                        "fill": "#FBF6EC"
+                      },
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "1Q24Y",
+                          "width": 22,
+                          "height": 22,
+                          "iconFontName": "map-pin",
+                          "iconFontFamily": "lucide",
+                          "fill": "#FBF6EC"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Fao8u",
+                      "layoutPosition": "absolute",
+                      "x": 380,
+                      "y": 150,
+                      "name": "pinLabel",
+                      "width": 140,
+                      "height": 36,
+                      "fill": "#2E1D10",
+                      "cornerRadius": 18,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "snyg1",
+                          "fill": "#FBF6EC",
+                          "content": "Gahvaltı Ankara",
+                          "fontFamily": "Merriweather",
+                          "fontSize": 12,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "YgXjJ",
+                  "name": "card",
+                  "width": 380,
+                  "fill": "#FBF6EC",
+                  "cornerRadius": 8,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#D9C7A8"
+                  },
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "X49nF",
+                      "fill": "#2E1D10",
+                      "content": "Adres & Ulaşım",
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 24,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "D92Vy",
+                      "name": "cs1",
+                      "width": "fill_container",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "wHT3K",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "map-pin",
+                          "iconFontFamily": "lucide",
+                          "fill": "#C9622A"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "EQvqD",
+                          "name": "cs1t",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 2,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "YcavR",
+                              "fill": "#8A6A49",
+                              "content": "Adres",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 11,
+                              "fontWeight": "700",
+                              "letterSpacing": 1
+                            },
+                            {
+                              "type": "text",
+                              "id": "MdjsW",
+                              "fill": "#2E1D10",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Kızılca Mahallesi Günay Caddesi No:13, Mamak / ANKARA",
+                              "lineHeight": 1.5,
+                              "fontFamily": "Merriweather",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "fciPQ",
+                      "name": "cs2",
+                      "width": "fill_container",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "81Q2T",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "phone",
+                          "iconFontFamily": "lucide",
+                          "fill": "#C9622A"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "fUaGC",
+                          "name": "cs2t",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 2,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "jMeqh",
+                              "fill": "#8A6A49",
+                              "content": "Telefon",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 11,
+                              "fontWeight": "700",
+                              "letterSpacing": 1
+                            },
+                            {
+                              "type": "text",
+                              "id": "LGGl9",
+                              "fill": "#2E1D10",
+                              "content": "0538 678 7938",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 14,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "VafIJ",
+                      "name": "cs3",
+                      "width": "fill_container",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "52HzD",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "clock-3",
+                          "iconFontFamily": "lucide",
+                          "fill": "#C9622A"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "MEkJs",
+                          "name": "cs3t",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 2,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "0eyjm",
+                              "fill": "#8A6A49",
+                              "content": "Çalışma Saatleri",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 11,
+                              "fontWeight": "700",
+                              "letterSpacing": 1
+                            },
+                            {
+                              "type": "text",
+                              "id": "p02F8",
+                              "fill": "#2E1D10",
+                              "content": "Her gün · 09:00 – 15:00",
+                              "fontFamily": "Merriweather",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "ladVe",
+                      "fill": "#EADFCB",
+                      "width": "fill_container",
+                      "height": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "SXxFg",
+                      "name": "btn1",
+                      "width": "fill_container",
+                      "fill": "#C9622A",
+                      "cornerRadius": 4,
+                      "gap": 8,
+                      "padding": [
+                        14,
+                        0
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "Z3pBf",
+                          "width": 16,
+                          "height": 16,
+                          "iconFontName": "navigation",
+                          "iconFontFamily": "lucide",
+                          "fill": "#FBF6EC"
+                        },
+                        {
+                          "type": "text",
+                          "id": "vsEC2",
+                          "fill": "#FBF6EC",
+                          "content": "Google Maps'te Aç",
+                          "fontFamily": "Merriweather",
+                          "fontSize": 14,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "i9sN9",
+                      "name": "btn2",
+                      "width": "fill_container",
+                      "cornerRadius": 4,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#5C3A21"
+                      },
+                      "gap": 8,
+                      "padding": [
+                        14,
+                        0
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "w6V1d",
+                          "width": 16,
+                          "height": 16,
+                          "iconFontName": "search",
+                          "iconFontFamily": "lucide",
+                          "fill": "#5C3A21"
+                        },
+                        {
+                          "type": "text",
+                          "id": "DwSU6",
+                          "fill": "#5C3A21",
+                          "content": "\"gahvaltiankara\" Ara",
+                          "fontFamily": "Merriweather",
+                          "fontSize": 14,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "7ej7H",
+          "name": "ft",
+          "width": "fill_container",
+          "fill": "#2E1D10",
+          "layout": "vertical",
+          "gap": 40,
+          "padding": [
+            72,
+            64,
+            32,
+            64
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "8tDcL",
+              "name": "ftop",
+              "width": "fill_container",
+              "gap": 64,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "vwYMV",
+                  "name": "fc1",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "7M24z",
+                      "name": "fll",
+                      "gap": 10,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "AaALZ",
+                          "width": 36,
+                          "height": 36,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./foto/logo_yeni.png",
+                            "mode": "fill"
+                          },
+                          "cornerRadius": 18
+                        },
+                        {
+                          "type": "text",
+                          "id": "Rrt1x",
+                          "fill": "#FBF6EC",
+                          "content": "Gahvaltı",
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 26,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "VEgI5",
+                      "fill": "#D9C7A8",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Yöresinden gelen organik ürünlerle hazırlanan, Ankara'nın köy kahvaltısı. Mamak, Kızılca Mahallesi'nde hizmet veriyoruz.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "Merriweather",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "y0vfF",
+                      "name": "instaBox",
+                      "fill": "#C9622A",
+                      "cornerRadius": 4,
+                      "gap": 10,
+                      "padding": [
+                        10,
+                        16
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "T6b8o",
+                          "width": 18,
+                          "height": 18,
+                          "iconFontName": "instagram",
+                          "iconFontFamily": "lucide",
+                          "fill": "#FBF6EC"
+                        },
+                        {
+                          "type": "text",
+                          "id": "mYBPa",
+                          "fill": "#FBF6EC",
+                          "content": "@gahvaltiankara06",
+                          "fontFamily": "Merriweather",
+                          "fontSize": 13,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "GfijE",
+                  "name": "fc2",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "V5Hly",
+                      "fill": "#E9A36B",
+                      "content": "— SAYFALAR",
+                      "fontFamily": "Merriweather",
+                      "fontSize": 11,
+                      "fontWeight": "700",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "gPpCr",
+                      "fill": "#D9C7A8",
+                      "content": "Ana Sayfa",
+                      "fontFamily": "Merriweather",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "4DeXa",
+                      "fill": "#D9C7A8",
+                      "content": "Hakkımızda",
+                      "fontFamily": "Merriweather",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "O7xKK",
+                      "fill": "#D9C7A8",
+                      "content": "Ürünler",
+                      "fontFamily": "Merriweather",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "olJGU",
+                      "fill": "#D9C7A8",
+                      "content": "Menü",
+                      "fontFamily": "Merriweather",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Jt5xy",
+                      "fill": "#D9C7A8",
+                      "content": "Organizasyonlar",
+                      "fontFamily": "Merriweather",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ugKXS",
+                  "name": "fc3",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "DJFWt",
+                      "fill": "#E9A36B",
+                      "content": "— İLETİŞİM",
+                      "fontFamily": "Merriweather",
+                      "fontSize": 11,
+                      "fontWeight": "700",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "HnDnG",
+                      "fill": "#D9C7A8",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Kızılca Mah. Günay Cad. No:13",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Merriweather",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "av41o",
+                      "fill": "#D9C7A8",
+                      "content": "Mamak / ANKARA",
+                      "fontFamily": "Merriweather",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ZegIC",
+                      "fill": "#D9C7A8",
+                      "content": "0538 678 7938",
+                      "fontFamily": "Merriweather",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "bjLxr",
+                      "fill": "#D9C7A8",
+                      "content": "gahvaltiankara@gmail.com",
+                      "fontFamily": "Merriweather",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "6Ive6",
+                  "name": "fc4",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "MaWO7",
+                      "fill": "#E9A36B",
+                      "content": "— ÇALIŞMA SAATLERİ",
+                      "fontFamily": "Merriweather",
+                      "fontSize": 11,
+                      "fontWeight": "700",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "6Nluk",
+                      "fill": "#FBF6EC",
+                      "content": "Serpme Kahvaltı",
+                      "fontFamily": "Merriweather",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "17eQH",
+                      "fill": "#D9C7A8",
+                      "content": "Her gün · 09:00 – 15:00",
+                      "fontFamily": "Merriweather",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "wZNDW",
+                      "fill": "#FBF6EC",
+                      "content": "Mangal (Yaz Sezonu)",
+                      "fontFamily": "Merriweather",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "GcTBq",
+                      "fill": "#D9C7A8",
+                      "content": "17:00 – 22:00",
+                      "fontFamily": "Merriweather",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "id": "NYYF3",
+              "fill": "#FFFFFF1A",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "frame",
+              "id": "XUJ0m",
+              "name": "fbot",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "RqhsA",
+                  "fill": "#8A6A49",
+                  "content": "© 2026 Gahvaltı Ankara. Tüm hakları saklıdır.",
+                  "fontFamily": "Merriweather",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "Li6VB",
+                  "fill": "#8A6A49",
+                  "content": "www.gahvaltiankara.com.tr",
+                  "fontFamily": "Merriweather",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

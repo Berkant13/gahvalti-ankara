@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm --version)",
+      "Bash(cmd.exe /c \"where node & where npm & node --version & npm --version\")",
+      "Bash(powershell.exe -Command \"node --version; npm --version\")",
+      "Bash(\"/c/Program Files/nodejs/node.exe\" --version)",
+      "Bash(\"/c/Program Files/nodejs/npm.cmd\" --version)",
+      "Bash(\"/c/Program Files/nodejs/node.exe\" -e \"const fs=require\\('fs'\\),path=require\\('path'\\);function cp\\(s,d\\){fs.mkdirSync\\(d,{recursive:true}\\);for\\(const e of fs.readdirSync\\(s,{withFileTypes:true}\\)\\){const a=path.join\\(s,e.name\\),b=path.join\\(d,e.name\\);if\\(e.isDirectory\\(\\)\\)cp\\(a,b\\);else fs.copyFileSync\\(a,b\\)}}cp\\('foto','public/foto'\\);console.log\\('done, files:',fs.readdirSync\\('public/foto'\\).length\\);\")",
+      "Bash(\"/c/Program Files/nodejs/npm.cmd\" install --no-audit --no-fund)",
+      "Bash(\"/c/Program Files/nodejs/npm.cmd\" install --no-audit --no-fund --silent)",
+      "Bash(\"/c/Program Files/nodejs/node.exe\" -e \"console.log\\(require\\('fs'\\).existsSync\\('node_modules/next'\\)?'next ok':'missing'\\); console.log\\(require\\('fs'\\).existsSync\\('node_modules/lucide-react'\\)?'lucide ok':'missing'\\);\")",
+      "Bash(\"/c/Program Files/nodejs/npm.cmd\" run dev)",
+      "Bash(\"/c/Program Files/nodejs/node.exe\" -e \"setTimeout\\(\\(\\)=>{console.log\\(require\\('fs'\\).readFileSync\\('C:/Users/berka/AppData/Local/Temp/claude/C--Users-berka-Desktop-gahvaltiankara-Gahvalti-Ankara-Website--claude-worktrees-sad-colden-5ee37f/e1bce680-b2e1-4bfc-80e3-a67d3f2af3fd/tasks/biova55jj.output','utf8'\\)\\)},10000\\)\")",
+      "Bash(\"/c/Program Files/nodejs/node.exe\" -e \"fetch\\('http://localhost:4200'\\).then\\(r=>r.text\\(\\)\\).then\\(t=>console.log\\('len:',t.length,'ok:',t.includes\\('Gahvaltı'\\)\\)\\).catch\\(e=>console.log\\('err',e.message\\)\\)\")",
+      "Bash(\"/c/Program Files/nodejs/node.exe\" -e \"require\\('child_process'\\).exec\\('start http://localhost:4200',{windowsHide:false}\\)\")"
+    ]
+  }
+}
