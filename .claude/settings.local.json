@@ -13,7 +13,15 @@
       "Bash(\"/c/Program Files/nodejs/npm.cmd\" run dev)",
       "Bash(\"/c/Program Files/nodejs/node.exe\" -e \"setTimeout\\(\\(\\)=>{console.log\\(require\\('fs'\\).readFileSync\\('C:/Users/berka/AppData/Local/Temp/claude/C--Users-berka-Desktop-gahvaltiankara-Gahvalti-Ankara-Website--claude-worktrees-sad-colden-5ee37f/e1bce680-b2e1-4bfc-80e3-a67d3f2af3fd/tasks/biova55jj.output','utf8'\\)\\)},10000\\)\")",
       "Bash(\"/c/Program Files/nodejs/node.exe\" -e \"fetch\\('http://localhost:4200'\\).then\\(r=>r.text\\(\\)\\).then\\(t=>console.log\\('len:',t.length,'ok:',t.includes\\('Gahvaltı'\\)\\)\\).catch\\(e=>console.log\\('err',e.message\\)\\)\")",
-      "Bash(\"/c/Program Files/nodejs/node.exe\" -e \"require\\('child_process'\\).exec\\('start http://localhost:4200',{windowsHide:false}\\)\")"
+      "Bash(\"/c/Program Files/nodejs/node.exe\" -e \"require\\('child_process'\\).exec\\('start http://localhost:4200',{windowsHide:false}\\)\")",
+      "Bash(\"/c/Program Files/nodejs/node.exe\" -e \"console.log\\('next:', require\\('./node_modules/next/package.json'\\).version\\)\")",
+      "Bash(\"/c/Program Files/nodejs/npm.cmd\" run build)",
+      "Bash(\"/c/Program Files/nodejs/node.exe\" -e \"const {execSync}=require\\('child_process'\\);try{const out=execSync\\('wmic process where \\\\\"name=\\\\\\\\'node.exe\\\\\\\\'\\\\\" get ProcessId,CommandLine /format:csv',{encoding:'utf8'}\\);const lines=out.split\\('\\\\n'\\).filter\\(l=>l.includes\\('next'\\)\\);console.log\\('Found:',lines.length\\);lines.forEach\\(l=>console.log\\(l.trim\\(\\).slice\\(0,200\\)\\)\\)}catch\\(e\\){console.log\\('err',e.message\\)}\")",
+      "Bash(\"/c/Program Files/nodejs/node.exe\" -e \"fetch\\('http://localhost:4200'\\).then\\(r=>console.log\\('4200 up:',r.status\\)\\).catch\\(e=>console.log\\('4200 down:',e.message\\)\\)\")",
+      "Bash(\"/c/Program Files/nodejs/node.exe\" -e \"const {execSync}=require\\('child_process'\\);try{execSync\\('taskkill /F /IM node.exe /FI \\\\\"WINDOWTITLE ne *Claude*\\\\\"',{stdio:'inherit'}\\)}catch\\(e\\){}\")",
+      "Bash(\"/c/Program Files/nodejs/node.exe\" -e \"require\\('child_process'\\).execSync\\('taskkill /F /FI \\\\\"IMAGENAME eq node.exe\\\\\" /FI \\\\\"PID ne '+process.pid+'\\\\\"',{stdio:'ignore'}\\)\")",
+      "Bash(\"/c/Program Files/nodejs/node.exe\" -e \"setTimeout\\(async\\(\\)=>{try{const r=await fetch\\('http://localhost:4200'\\);console.log\\('status:',r.status,'ok:',\\(await r.text\\(\\)\\).includes\\('Gahvaltı'\\)\\)}catch\\(e\\){console.log\\('err',e.message\\)}console.log\\('---LOG---'\\);console.log\\(require\\('fs'\\).readFileSync\\('C:/Users/berka/AppData/Local/Temp/claude/C--Users-berka-Desktop-gahvaltiankara-Gahvalti-Ankara-Website--claude-worktrees-sad-colden-5ee37f/e1bce680-b2e1-4bfc-80e3-a67d3f2af3fd/tasks/bpx4ks2l9.output','utf8'\\)\\)},8000\\)\")",
+      "Bash(\"/c/Program Files/nodejs/node.exe\" -e \"setTimeout\\(\\(\\)=>{console.log\\(require\\('fs'\\).readFileSync\\('C:/Users/berka/AppData/Local/Temp/claude/C--Users-berka-Desktop-gahvaltiankara-Gahvalti-Ankara-Website--claude-worktrees-sad-colden-5ee37f/e1bce680-b2e1-4bfc-80e3-a67d3f2af3fd/tasks/bunc8erzk.output','utf8'\\)\\)},12000\\)\")"
     ]
   }
 }

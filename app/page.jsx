@@ -6,6 +6,7 @@ import {
   Clock3, Info, Instagram, Navigation, Search, CalendarHeart,
   Star, ChevronLeft, ChevronRight, Quote,
   Wheat, EggFried, Sandwich, Coffee, GlassWater, Croissant, Drumstick, Soup,
+  Menu as MenuIcon, X,
 } from "lucide-react";
 
 const reserveSlides = [
@@ -197,8 +198,18 @@ const MAPS_URL =
   "https://www.google.com/maps/search/?api=1&query=gahvaltiankara+Kızılca+Mahallesi+Mamak+Ankara";
 
 export default function Page() {
+  const [visibleCount, setVisibleCount] = useState(3);
+  useEffect(() => {
+    const update = () => {
+      const w = window.innerWidth;
+      setVisibleCount(w <= 900 ? 1 : w <= 1100 ? 2 : 3);
+    };
+    update();
+    window.addEventListener("resize", update);
+    return () => window.removeEventListener("resize", update);
+  }, []);
+
   const [reviewIdx, setReviewIdx] = useState(0);
-  const visibleCount = 3;
   const maxIdx = Math.max(0, reviews.length - visibleCount);
 
   useEffect(() => {
@@ -212,7 +223,7 @@ export default function Page() {
   const nextReview = () => setReviewIdx((i) => (i >= maxIdx ? 0 : i + 1));
 
   const [eventIdx, setEventIdx] = useState(0);
-  const eventVisible = 3;
+  const eventVisible = visibleCount;
   const eventMax = Math.max(0, events.length - eventVisible);
   useEffect(() => {
     const t = setInterval(() => {
@@ -251,7 +262,12 @@ export default function Page() {
     }, 6000);
     return () => clearInterval(t);
   }, []);
-  const activeReserve = reserveSlides[reserveIdx];
+  const [navOpen, setNavOpen] = useState(false);
+  useEffect(() => {
+    document.body.style.overflow = navOpen ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
+  }, [navOpen]);
+  const closeNav = () => setNavOpen(false);
 
   const avgRating = (reviews.reduce((s, r) => s + r.rating, 0) / reviews.length).toFixed(1);
 
@@ -273,8 +289,35 @@ export default function Page() {
           <a href="#events">Organizasyonlar</a>
           <a href="#contact">İletişim</a>
         </div>
-        <a href="#reserve" className="btn btn-primary btn-sm">Rezervasyon</a>
+        <div className="nav-right">
+          <a href="#reserve" className="btn btn-primary btn-sm nav-cta-desktop">Rezervasyon</a>
+          <button
+            className="nav-toggle"
+            onClick={() => setNavOpen((v) => !v)}
+            aria-label={navOpen ? "Menüyü kapat" : "Menüyü aç"}
+          >
+            {navOpen ? <X size={24} /> : <MenuIcon size={24} />}
+          </button>
+        </div>
       </nav>
+
+      {/* MOBILE DRAWER */}
+      <div className={"nav-drawer" + (navOpen ? " open" : "")} onClick={closeNav}>
+        <div className="nav-drawer-inner" onClick={(e) => e.stopPropagation()}>
+          <a href="#home" onClick={closeNav}>Ana Sayfa</a>
+          <a href="#about" onClick={closeNav}>Hakkımızda</a>
+          <a href="#products" onClick={closeNav}>Ürünler</a>
+          <a href="#menu" onClick={closeNav}>Menü</a>
+          <a href="#events" onClick={closeNav}>Organizasyonlar</a>
+          <a href="#reserve" onClick={closeNav}>Rezervasyon</a>
+          <a href="#contact" onClick={closeNav}>İletişim</a>
+          <div className="nav-drawer-cta">
+            <a href="tel:05386787938" className="btn btn-primary" onClick={closeNav}>
+              <Phone size={16} /> 0538 678 7938
+            </a>
+          </div>
+        </div>
+      </div>
 
       {/* HERO */}
       <section id="home" className="hero">
