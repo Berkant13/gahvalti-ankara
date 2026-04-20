@@ -6,7 +6,7 @@ import {
   Clock3, Info, Instagram, Navigation, Search, CalendarHeart,
   Star, ChevronLeft, ChevronRight, Quote,
   Wheat, EggFried, Sandwich, Coffee, GlassWater, Croissant, Drumstick, Soup,
-  Menu as MenuIcon, X,
+  Menu as MenuIcon, X, Home,
 } from "lucide-react";
 
 const reserveSlides = [
@@ -269,6 +269,15 @@ export default function Page() {
   }, [navOpen]);
   const closeNav = () => setNavOpen(false);
 
+  const [showTop, setShowTop] = useState(false);
+  useEffect(() => {
+    const onScroll = () => setShowTop(window.scrollY > 480);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+  const scrollTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
+
   const avgRating = (reviews.reduce((s, r) => s + r.rating, 0) / reviews.length).toFixed(1);
 
   return (
@@ -400,39 +409,90 @@ export default function Page() {
         </div>
       </section>
 
-      {/* WHY — Neden aileler bizi seçiyor? */}
-      <section className="why">
-        <div className="section-head">
-          <span className="eyebrow">— Neden Biz</span>
-          <h2>Neden aileler bizi seçiyor?</h2>
+      {/* WHY + STORY — Neden Biz · Bir günümüz (yan yana) */}
+      <section className="why-story">
+        <div className="ws-col">
+          <div className="ws-head">
+            <span className="eyebrow">— Neden Biz</span>
+            <h2>Neden aileler bizi seçiyor?</h2>
+          </div>
+          <div className="why-grid">
+            <div className="why-card">
+              <div className="why-icon olive" aria-hidden="true">🛝</div>
+              <div className="why-body">
+                <h3>Çocuk parkı bahçede</h3>
+                <p>Salıncak, kaydırak, kum havuzu. Göz önünde.</p>
+              </div>
+            </div>
+            <div className="why-card">
+              <div className="why-icon terra" aria-hidden="true">🐔</div>
+              <div className="why-body">
+                <h3>Tavuk, kedi, köpek dostlar</h3>
+                <p>Köyün minik üyeleriyle tanışın.</p>
+              </div>
+            </div>
+            <div className="why-card">
+              <div className="why-icon mustard" aria-hidden="true">🫖</div>
+              <div className="why-body">
+                <h3>Semaverde sınırsız çay</h3>
+                <p>Sabah acele etmeyin — biz buradayız.</p>
+              </div>
+            </div>
+            <div className="why-card">
+              <div className="why-icon forest" aria-hidden="true">🌳</div>
+              <div className="why-body">
+                <h3>Bahçe ya da köy odası</h3>
+                <p>Hava güzelse ağaçların altında.</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="why-grid">
-          <div className="why-card">
-            <div className="why-icon olive" aria-hidden="true">🛝</div>
-            <div className="why-body">
-              <h3>Çocuk parkı bahçede</h3>
-              <p>Salıncak, kaydırak, kum havuzu. Göz önünde.</p>
-            </div>
+
+        <div className="ws-col">
+          <div className="ws-head">
+            <span className="eyebrow">✦ 2016'DAN BERİ ✦</span>
+            <h2 className="story-h2">Bir köy sabahı,<br/>bir aile sofrası.</h2>
+            <p className="ws-lead">Size bir günümüzü anlatalım.</p>
           </div>
-          <div className="why-card">
-            <div className="why-icon terra" aria-hidden="true">🐔</div>
-            <div className="why-body">
-              <h3>Tavuk, kedi, köpek dostlar</h3>
-              <p>Köyün minik üyeleriyle tanışın.</p>
+          <div className="story-list">
+            <div className="story-item">
+              <div className="story-left">
+                <span className="story-time">07.30</span>
+                <span className="story-line" />
+              </div>
+              <div className="story-body">
+                <h3>Ocak yanar, tereyağ kavrulur</h3>
+                <p>Komşu köyden gelen taze sütle kahvaltı hazırlığı başlar. Bazlama hamuru tezgâhta yoğrulur.</p>
+              </div>
             </div>
-          </div>
-          <div className="why-card">
-            <div className="why-icon mustard" aria-hidden="true">🫖</div>
-            <div className="why-body">
-              <h3>Semaverde sınırsız çay</h3>
-              <p>Sabah acele etmeyin — biz buradayız.</p>
+            <div className="story-item">
+              <div className="story-left">
+                <span className="story-time">09.00</span>
+                <span className="story-line" />
+              </div>
+              <div className="story-body">
+                <h3>Kapı açılır, aileler gelir</h3>
+                <p>Çocuklar bahçeye, kedilerin yanına koşar. Büyükler bahçe masasına ya da köy odasına yerleşir.</p>
+              </div>
             </div>
-          </div>
-          <div className="why-card">
-            <div className="why-icon forest" aria-hidden="true">🌳</div>
-            <div className="why-body">
-              <h3>Bahçe ya da köy odası</h3>
-              <p>Hava güzelse ağaçların altında.</p>
+            <div className="story-item">
+              <div className="story-left">
+                <span className="story-time">10.30</span>
+                <span className="story-line" />
+              </div>
+              <div className="story-body">
+                <h3>Sofra kurulur</h3>
+                <p>Yöresel peynirler, reçeller, sıcak bazlama, menemen, semaverde çay. Sınırsız. Acele yok.</p>
+              </div>
+            </div>
+            <div className="story-item story-item-last">
+              <div className="story-left">
+                <span className="story-time">13.00</span>
+              </div>
+              <div className="story-body">
+                <h3>Köy pazarı açılır</h3>
+                <p>Beğendiğiniz peynirden, baldan, zeytinyağından yanınızda götürün.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -460,56 +520,6 @@ export default function Page() {
           </div>
           <div className="pack-cta">
             <a href="#reserve" className="btn btn-primary">Ailemiz için yer ayırt</a>
-          </div>
-        </div>
-      </section>
-
-      {/* STORY — Bir günümüz */}
-      <section className="story">
-        <div className="section-head">
-          <span className="eyebrow">✦ MAMAK · ANKARA · 2016'DAN BERİ ✦</span>
-          <h2 className="story-h2">Bir köy sabahı,<br/>bir aile sofrası.</h2>
-          <p>Size bir günümüzü anlatalım.</p>
-        </div>
-        <div className="story-list">
-          <div className="story-item">
-            <div className="story-left">
-              <span className="story-time">07.30</span>
-              <span className="story-line" />
-            </div>
-            <div className="story-body">
-              <h3>Ocak yanar, tereyağ kavrulur</h3>
-              <p>Komşu köyden gelen taze sütle kahvaltı hazırlığı başlar. Bazlama hamuru tezgâhta yoğrulur.</p>
-            </div>
-          </div>
-          <div className="story-item">
-            <div className="story-left">
-              <span className="story-time">09.00</span>
-              <span className="story-line" />
-            </div>
-            <div className="story-body">
-              <h3>Kapı açılır, aileler gelir</h3>
-              <p>Çocuklar bahçeye, kedilerin yanına koşar. Büyükler bahçe masasına ya da köy odasına yerleşir.</p>
-            </div>
-          </div>
-          <div className="story-item">
-            <div className="story-left">
-              <span className="story-time">10.30</span>
-              <span className="story-line" />
-            </div>
-            <div className="story-body">
-              <h3>Sofra kurulur</h3>
-              <p>Yöresel peynirler, reçeller, sıcak bazlama, menemen, semaverde çay. Sınırsız. Acele yok.</p>
-            </div>
-          </div>
-          <div className="story-item story-item-last">
-            <div className="story-left">
-              <span className="story-time">13.00</span>
-            </div>
-            <div className="story-body">
-              <h3>Köy pazarı açılır</h3>
-              <p>Beğendiğiniz peynirden, baldan, zeytinyağından yanınızda götürün.</p>
-            </div>
           </div>
         </div>
       </section>
@@ -911,6 +921,14 @@ export default function Page() {
           <span>www.gahvaltiankara.com.tr</span>
         </div>
       </footer>
+
+      <button
+        className={"back-to-top" + (showTop ? " show" : "")}
+        onClick={scrollTop}
+        aria-label="Sayfanın başına dön"
+      >
+        <Home size={20} />
+      </button>
     </>
   );
 }

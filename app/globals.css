@@ -207,10 +207,25 @@ section { padding: 96px 56px; }
 }
 .card-body .price { font-size: 15px; font-weight: 700; color: var(--terracotta); }
 
+/* Why + Story side-by-side wrapper */
+.why-story {
+  background: var(--cream);
+  padding: 96px 56px;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 56px;
+  align-items: start;
+}
+.why-story > .ws-col { min-width: 0; }
+.ws-head { margin-bottom: 28px; }
+.ws-head .eyebrow { display: inline-block; }
+.ws-head h2 {
+  font-family: var(--serif); font-size: 32px; font-weight: 500;
+  line-height: 1.15; letter-spacing: -0.4px; color: var(--brown-dark);
+  margin: 10px 0 8px;
+}
+.ws-head p.ws-lead { color: var(--brown-med); font-size: 14px; margin: 0; }
+
 /* Why us — V6 feature cards (horizontal, colored emoji badge) */
-.why { background: var(--cream); padding: 96px 56px; }
-.why .section-head h2 { color: var(--brown-dark); }
-.why-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; max-width: 1100px; margin: 0 auto; }
+.why-grid { display: grid; grid-template-columns: 1fr; gap: 14px; }
 .why-card {
   background: var(--cream-2);
   padding: 22px; border-radius: 20px;
@@ -269,15 +284,10 @@ section { padding: 96px 56px; }
 .pack .pack-cta .btn-primary { padding: 14px 30px; }
 
 /* Story — V7 "Bir günümüz" timeline */
-.story { background: var(--cream); }
-.story .section-head h2.story-h2 {
-  font-style: italic; font-weight: 500; letter-spacing: -0.5px;
-}
-.story .section-head p {
-  font-size: 14px; color: var(--brown-med); margin-top: 4px;
+.ws-head h2.story-h2 {
+  font-style: italic; letter-spacing: -0.3px;
 }
 .story-list {
-  max-width: 720px; margin: 0 auto;
   display: flex; flex-direction: column;
 }
 .story-item { display: flex; gap: 18px; }
@@ -306,8 +316,6 @@ section { padding: 96px 56px; }
 .story-item-last .story-body { padding-bottom: 0; }
 
 @media (max-width: 900px) {
-  .story { padding: 56px 18px; }
-  .story-list { max-width: 100%; }
   .story-item { gap: 14px; }
   .story-left { width: 52px; }
   .story-time { font-size: 15px; }
@@ -681,12 +689,30 @@ footer {
   display: flex; justify-content: space-between; font-size: 12px; color: var(--brown-soft);
 }
 
+/* Back-to-top */
+.back-to-top {
+  position: fixed; right: 22px; bottom: 22px; z-index: 70;
+  width: 48px; height: 48px; border-radius: 50%;
+  background: var(--terracotta); color: #fff;
+  display: inline-flex; align-items: center; justify-content: center;
+  border: 0; cursor: pointer;
+  box-shadow: 0 10px 24px rgba(216, 87, 42, 0.35);
+  opacity: 0; pointer-events: none; transform: translateY(12px);
+  transition: opacity .25s ease, transform .25s ease, background .2s;
+}
+.back-to-top.show { opacity: 1; pointer-events: auto; transform: translateY(0); }
+.back-to-top:hover { background: #c24b22; }
+@media (max-width: 520px) {
+  .back-to-top { right: 16px; bottom: 16px; width: 44px; height: 44px; }
+}
+
 /* =============== RESPONSIVE =============== */
 
 /* Tablet + Small desktop */
 @media (max-width: 1100px) {
   section { padding: 80px 40px; }
-  .nav, .hero, .about, .reserve, footer, .pack, .why { padding-left: 40px; padding-right: 40px; }
+  .nav, .hero, .about, .reserve, footer, .pack, .why-story { padding-left: 40px; padding-right: 40px; }
+  .why-story { gap: 40px; }
   .hero h1 { font-size: 58px; }
   .section-head h2 { font-size: 36px; }
   .pack h2 { font-size: 38px; }
@@ -733,8 +759,10 @@ footer {
   .card-body h3 { font-size: 15px; }
   .card-body .price { font-size: 14px; }
 
-  .why { padding: 56px 18px; }
-  .why-grid { grid-template-columns: 1fr; gap: 12px; }
+  .why-story { padding: 56px 18px; grid-template-columns: 1fr; gap: 40px; }
+  .ws-head { margin-bottom: 20px; }
+  .ws-head h2 { font-size: 24px; }
+  .why-grid { gap: 12px; }
   .why-card { padding: 16px; gap: 12px; border-radius: 18px; }
   .why-icon { width: 52px; height: 52px; border-radius: 26px; font-size: 24px; }
   .why-body h3 { font-size: 14px; }
