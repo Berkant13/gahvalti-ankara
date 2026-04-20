@@ -279,7 +279,10 @@ export default function Page() {
           <span className="mark">
             <img src="/foto/logo_yeni.png" alt="" />
           </span>
-          <span>Gahvaltı</span>
+          <span className="nav-logo-text">
+            <span className="n1">Gahvaltı</span>
+            <span className="n2">ankara köy sofrası</span>
+          </span>
         </div>
         <div className="nav-menu">
           <a href="#home" className="active">Ana Sayfa</a>
@@ -290,7 +293,9 @@ export default function Page() {
           <a href="#contact">İletişim</a>
         </div>
         <div className="nav-right">
-          <a href="#reserve" className="btn btn-primary btn-sm nav-cta-desktop">Rezervasyon</a>
+          <a href="tel:05386787938" className="nav-cta-desktop">
+            <Phone size={14} /> Ara
+          </a>
           <button
             className="nav-toggle"
             onClick={() => setNavOpen((v) => !v)}
@@ -322,14 +327,14 @@ export default function Page() {
       {/* HERO */}
       <section id="home" className="hero">
         <div>
-          <span className="tag">★ Ankara'da ilk ve tek köy kahvaltısı</span>
-          <h1>Yöresinden sofranıza.</h1>
+          <span className="tag">🌾 10. yılımızda, hâlâ aynı aile</span>
+          <h1>Ailecek gelin,<br/>doyarak dönün.</h1>
           <p className="lead">
-            Organik, taptaze ve tamamen yöreden gelen ürünlerle hazırlanan geleneksel bir köy
-            kahvaltısı deneyimi. Ankara'nın en yakın köylerinden birinde, aile ortamında.
+            Çocuklar bahçede koşsun, siz sakin sakin kahvaltı edin. Sınırsız çay, yöresel peynirler,
+            taze bazlama — tam bir aile sabahı, Ankara'nın en yakın köyünde.
           </p>
           <div className="ctas">
-            <a href="#reserve" className="btn btn-primary">Rezervasyon Yap</a>
+            <a href="#reserve" className="btn btn-primary">Ailemiz için yer ayırt</a>
             <a href="#menu" className="btn btn-outline">Menüyü Keşfet</a>
           </div>
           <div className="stats">
@@ -339,14 +344,14 @@ export default function Page() {
           </div>
         </div>
         <div className="hero-img">
-          <img src="/foto/kahvaltı_yeni.png" alt="Serpme kahvaltı" />
+          <img src={encodeURI("/foto/kahvaltı_yeni.png")} alt="Serpme kahvaltı" />
         </div>
       </section>
 
       {/* ABOUT */}
       <section id="about" className="about">
         <div className="about-img">
-          <img src="/foto/hakkımızda.jpg" alt="Hakkımızda" />
+          <img src={encodeURI("/foto/hakkımızda.jpg")} alt="Hakkımızda" />
         </div>
         <div>
           <span className="eyebrow">— Hakkımızda</span>
@@ -395,32 +400,116 @@ export default function Page() {
         </div>
       </section>
 
-      {/* WHY */}
+      {/* WHY — Neden aileler bizi seçiyor? */}
       <section className="why">
         <div className="section-head">
           <span className="eyebrow">— Neden Biz</span>
-          <h2>Doğadan sofranıza bir deneyim.</h2>
+          <h2>Neden aileler bizi seçiyor?</h2>
         </div>
         <div className="why-grid">
           <div className="why-card">
-            <Utensils size={28} />
-            <h3>Lezzet</h3>
-            <p>Türkiye'nin farklı yerlerinden gelen doğal ve lezzetli ürünler ile sizlere sağlıklı bir kahvaltı sunuyoruz.</p>
+            <div className="why-icon olive" aria-hidden="true">🛝</div>
+            <div className="why-body">
+              <h3>Çocuk parkı bahçede</h3>
+              <p>Salıncak, kaydırak, kum havuzu. Göz önünde.</p>
+            </div>
           </div>
           <div className="why-card">
-            <Trees size={28} />
-            <h3>Çevre</h3>
-            <p>Sessiz, sakin, huzur verici ve ağaçların arasında unutamayacağınız bir köy mekanı sizleri bekliyor.</p>
+            <div className="why-icon terra" aria-hidden="true">🐔</div>
+            <div className="why-body">
+              <h3>Tavuk, kedi, köpek dostlar</h3>
+              <p>Köyün minik üyeleriyle tanışın.</p>
+            </div>
           </div>
           <div className="why-card">
-            <Users size={28} />
-            <h3>Ortam</h3>
-            <p>Çocuklarınız parkta eğlenirken sizin de vakit geçirebileceğiniz rahat ve doğal bir aile ortamı.</p>
+            <div className="why-icon mustard" aria-hidden="true">🫖</div>
+            <div className="why-body">
+              <h3>Semaverde sınırsız çay</h3>
+              <p>Sabah acele etmeyin — biz buradayız.</p>
+            </div>
           </div>
           <div className="why-card">
-            <Flame size={28} />
-            <h3>Size Özel</h3>
-            <p>Kendin pişir kendin ye konseptimiz sayesinde, sevdikleriniz ile mangal keyfi yapma imkanı.</p>
+            <div className="why-icon forest" aria-hidden="true">🌳</div>
+            <div className="why-body">
+              <h3>Bahçe ya da köy odası</h3>
+              <p>Hava güzelse ağaçların altında.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* PACK — Aile Paketi */}
+      <section className="pack">
+        <div className="pack-inner">
+          <span className="eyebrow">— Aile Menüsü</span>
+          <h2>2 büyük + 2 çocuk</h2>
+          <p className="pack-lead">
+            Serpme kahvaltı + çocuklara özel süt, meyve, peynirli bazlama — doyasıya paylaşın.
+          </p>
+          <div className="pack-card">
+            <div className="pack-card-head">
+              <h3>Aile Paketi</h3>
+              <span className="price">1.200₺</span>
+            </div>
+            <ul className="pack-list">
+              <li><span className="tick">✓</span> Serpme kahvaltı (2 kişi)</li>
+              <li><span className="tick">✓</span> Çocuk tabakları: süt, peynir, meyve</li>
+              <li><span className="tick">✓</span> Sınırsız çay + sıcak süt</li>
+              <li><span className="tick">✓</span> Oyun parkı, güvenli bahçe</li>
+            </ul>
+          </div>
+          <div className="pack-cta">
+            <a href="#reserve" className="btn btn-primary">Ailemiz için yer ayırt</a>
+          </div>
+        </div>
+      </section>
+
+      {/* STORY — Bir günümüz */}
+      <section className="story">
+        <div className="section-head">
+          <span className="eyebrow">✦ MAMAK · ANKARA · 2016'DAN BERİ ✦</span>
+          <h2 className="story-h2">Bir köy sabahı,<br/>bir aile sofrası.</h2>
+          <p>Size bir günümüzü anlatalım.</p>
+        </div>
+        <div className="story-list">
+          <div className="story-item">
+            <div className="story-left">
+              <span className="story-time">07.30</span>
+              <span className="story-line" />
+            </div>
+            <div className="story-body">
+              <h3>Ocak yanar, tereyağ kavrulur</h3>
+              <p>Komşu köyden gelen taze sütle kahvaltı hazırlığı başlar. Bazlama hamuru tezgâhta yoğrulur.</p>
+            </div>
+          </div>
+          <div className="story-item">
+            <div className="story-left">
+              <span className="story-time">09.00</span>
+              <span className="story-line" />
+            </div>
+            <div className="story-body">
+              <h3>Kapı açılır, aileler gelir</h3>
+              <p>Çocuklar bahçeye, kedilerin yanına koşar. Büyükler bahçe masasına ya da köy odasına yerleşir.</p>
+            </div>
+          </div>
+          <div className="story-item">
+            <div className="story-left">
+              <span className="story-time">10.30</span>
+              <span className="story-line" />
+            </div>
+            <div className="story-body">
+              <h3>Sofra kurulur</h3>
+              <p>Yöresel peynirler, reçeller, sıcak bazlama, menemen, semaverde çay. Sınırsız. Acele yok.</p>
+            </div>
+          </div>
+          <div className="story-item story-item-last">
+            <div className="story-left">
+              <span className="story-time">13.00</span>
+            </div>
+            <div className="story-body">
+              <h3>Köy pazarı açılır</h3>
+              <p>Beğendiğiniz peynirden, baldan, zeytinyağından yanınızda götürün.</p>
+            </div>
           </div>
         </div>
       </section>
