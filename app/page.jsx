@@ -83,55 +83,80 @@ const reserveSlides = [
 
 const reviews = [
   {
-    name: "Ayşe K.",
-    date: "2 hafta önce",
+    name: "Adnan Aytaç",
+    date: "Google yorumu",
     rating: 5,
-    text: "Ankara'da bulabileceğiniz en samimi köy kahvaltısı. Yöresel ürünler gerçekten taptaze, özellikle Trabzon tereyağı ve petek bal harika. Mutlaka rezervasyon yaptırın!",
+    text: "Pazar sabahı tüm yorumlara rağmen eşimle beraber kahvaltıya gittik. Ortam sıcacık, eski köy günlerini hatırladık. Hizmet olarak da çok hızlılar ve kahvaltınız 10 dakika sürmeden masanıza geliyor. Çayın sobanın üzerinde ve sınırsız olması da ayrıca güzel. Fiyat performans olarak da gayet iyi, gitmek isteyenler için güzel bir ortam.",
     avatar: "A",
   },
   {
-    name: "Mehmet Y.",
-    date: "1 ay önce",
+    name: "Ayça Koç",
+    date: "Google yorumu",
     rating: 5,
-    text: "Ailecek gittik, çocuklar parkta çok eğlendi, biz de sakin bir ortamda kahvaltımızı yaptık. Servis gayet hızlı, porsiyonlar bereketli. Kesinlikle tekrar geleceğiz.",
-    avatar: "M",
-  },
-  {
-    name: "Zeynep D.",
-    date: "1 ay önce",
-    rating: 5,
-    text: "Semaverde çay ve katmer inanılmaz! Evlilik yıl dönümümüz için tercih ettik, mekan sahipleri çok ilgili. Herkese tavsiye ederim.",
-    avatar: "Z",
-  },
-  {
-    name: "Ali R.",
-    date: "2 ay önce",
-    rating: 4,
-    text: "Yöresel lezzetler açısından çok zengin bir menü. Sucuklu yumurta ve menemen harikaydı. Hafta sonu biraz kalabalık oluyor, rezervasyon şart.",
+    text: "Daha önceden kahvaltısına gidip memnun kaldığımız doğal, sıcak bir ortamı iftar için tercih ettik. Yemekler çok lezzetliydi; ortamın sıcaklığı ve yemeklerin lezzeti sanki anne eli değmiş hissi verdi. Saz eşliğindeki canlı müzik ile keyifli zaman geçirdik, herkese tavsiye ederim. 3 buçuk yaşındaki oğlum da keyifle sıkılmadan vakit geçirdi.",
     avatar: "A",
   },
   {
-    name: "Fatma B.",
-    date: "3 ay önce",
+    name: "Can Yadigar Kiperenli",
+    date: "Google yorumu",
     rating: 5,
-    text: "Ankara'nın en iyi kahvaltı mekanlarından biri kesinlikle. Organik ürünler, temiz hava, aile ortamı. Mangal konsepti için yaz sezonunu bekliyoruz!",
-    avatar: "F",
+    text: "Kahvaltıdan genel olarak oldukça memnun kaldım. Ürünler taze ve lezzetliydi, sunum özenliydi. Mekanın atmosferi sakin ve keyifli, çalışanlar da ilgiliydi. Her şey gayet başarılıydı, tekrar gelmeyi düşünürüz. Çalışan arkadaşa memnun olmadığınız noktayı bildirdiğinizde elinden geleni yaparak sizi memnun etmeye çabalıyor.",
+    avatar: "C",
   },
   {
-    name: "Ozan T.",
-    date: "3 ay önce",
+    name: "Şevval Cengiz",
+    date: "Google yorumu",
     rating: 5,
-    text: "Şehrin gürültüsünden kaçıp doğada kahvaltı yapmak isteyenler için ideal. Kuymak ve anne patatesini denemelisiniz. Fiyat/performans çok iyi.",
+    text: "Çok güzeldi her şey. Taze kahvaltılıklar. Patates kızartması ben küçükken anneannemin yaptığı gibiydi. Sıcak ve rahattı. Dışarıda kahvaltı yapmayı sevmiyorum sanıyordum ama artık dışarıda kahvaltı yapılacaksa adres burası.",
+    avatar: "Ş",
+  },
+  {
+    name: "Gizem Barış",
+    date: "Google yorumu",
+    rating: 5,
+    text: "Kahvaltıya da iftara da gittik ve ikisi de gerçekten harikaydı. Kahvaltıda her şey çok taze ve özenliydi, peynirlerden reçellere kadar her şey nefisti. İftarda ise yemekler inanılmaz lezzetliydi. Mekanın atmosferi çok sıcak ve samimi, kendinizi evinizde gibi hissediyorsunuz. Ankara'da böyle kaliteli ve samimi bir yer bulmak kolay değil, kesinlikle tekrar gideceğiz.",
+    avatar: "G",
+  },
+  {
+    name: "Ebry G.E",
+    date: "Google yorumu",
+    rating: 5,
+    text: "Kalabalıktan uzak, sakin bir yerde kahvaltı yapma arayışındayken Google'da buldum. Oldukça beğendim. Ürün lezzetleri güzeldi, sucuğu ve menemeni özellikle çok beğendim. Patatesi, ekmeği, çayı ve genel anlamda masada görünenler güzeldi. Servis hızlıydı, personel de hızlı ve güler yüzlüydü. Açık havada ağaçların gölgesinde serin kahvaltı yapma fırsatımız oldu. Bir daha uğrayacağım mutlaka.",
+    avatar: "E",
+  },
+  {
+    name: "Duru Yavaş",
+    date: "Google yorumu",
+    rating: 5,
+    text: "07.03.2026 Cumartesi gecesi iftar yemeğinde buradaydık. Canlı müzik vardı; sıcak, samimi bir ortamda uzun zamandır arkadaşlarımla birlikte hiç eğlenmediğimiz kadar eğlendik. Müzisyen arkadaş süperdi. Mekan sahibi Murat Bey'e, eşi Aysun Hanım'a ve tüm çalışan personele çok teşekkür ediyorum. Elinize emeğinize sağlık.",
+    avatar: "D",
+  },
+  {
+    name: "Oğuzhan Sandıkçı",
+    date: "Google yorumu",
+    rating: 5,
+    text: "Köyevi gibi, çok tatlı bir mekan. Konsept olarak güzel bir yer olmuş. Kahvaltı lezzetli ve yeterliydi. Ayrıca başka köy ürünleri de satıyorlar, isterseniz alabiliyorsunuz. Çocuk oyun alanı da var. Ulaşımı da zor değil. Tavsiye ederim.",
     avatar: "O",
   },
   {
-    name: "Elif S.",
-    date: "4 ay önce",
+    name: "Hasan Fatih Özdemir",
+    date: "Google yorumu",
     rating: 5,
-    text: "Çok güzel bir mekan, bahçe kahvaltısı tam istediğim gibi oldu. Yöresel peynir çeşitleri bayağı fazla, hepsi lezzetliydi. Teşekkürler Gahvaltı Ankara!",
-    avatar: "E",
+    text: "Daha önceden namını duymuştum, bugün gitmek nasip oldu. Ortam gayet sessiz, köy ortamı. Çalışanlar çok güler yüzlü ve yardımcı. İşletme sahibi Murat Bey inanılmaz beyefendi, saygılı ve güler yüzlü biri. Ürünler son derece lezzetli, taze ve doğal. Tereyağına, sucuğa bayıldım. Menemen harikaydı. Porsiyonlar ise bize fazla geldi; ben, eşim ve 9 yaşında kızımla tıka basa yedik. Çok memnun kaldım, yine giderim. Pişman olmazsınız.",
+    avatar: "H",
+  },
+  {
+    name: "Gülşen Gökçen",
+    date: "Google yorumu",
+    rating: 5,
+    text: "Sakin bir mekan. Kahvaltısı gayet doyurucu. Biz 2 kişi gittik ama 3 kişi için de yeterliydi. Şehre uzak değil, ulaşımı kolay. Lezzetler üst düzey. Ekstra olarak kahvaltıdaki doğal ürünlerinizi eviniz için satın alabiliyor olmak ayrıca güzel.",
+    avatar: "G",
   },
 ];
+
+const googleRating = "4.2";
+const googleReviewCount = "300";
+const GOOGLE_REVIEWS_URL = "https://share.google/J6p4aPWgYQUyCOuB2";
 
 const products = [
   {
@@ -476,10 +501,6 @@ export default function Page() {
   }, []);
   const scrollTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
-  const avgRating = (
-    reviews.reduce((s, r) => s + r.rating, 0) / reviews.length
-  ).toFixed(1);
-
   return (
     <>
       {/* NAV */}
@@ -489,8 +510,8 @@ export default function Page() {
             <img src="/foto/logo_yeni.png" alt="" />
           </span>
           <span className="nav-logo-text">
-            <span className="n1">Gahvaltı</span>
-            <span className="n2">ankara köy sofrası</span>
+            <span className="n1">Gahvaltı Ankara</span>
+            <span className="n2">köy sofrası</span>
           </span>
         </div>
         <div className="nav-menu">
@@ -783,10 +804,10 @@ export default function Page() {
                 className="card-img"
                 style={{ backgroundImage: `url(${encodeURI(p.img)})` }}
               />
-              <div className="product-desc">{p.desc}</div>
               <div className="card-body">
                 <h3>{p.name}</h3>
                 <span className="price">{p.price}</span>
+                <p className="product-desc">{p.desc}</p>
               </div>
             </div>
           ))}
@@ -981,14 +1002,14 @@ export default function Page() {
           <span className="eyebrow">— Google Yorumları</span>
           <h2>Misafirlerimiz ne diyor?</h2>
           <div className="rating-summary">
-            <span className="big">{avgRating}</span>
+            <span className="big">{googleRating}</span>
             <div>
               <div className="stars">
                 {[0, 1, 2, 3, 4].map((i) => (
                   <Star key={i} size={18} fill="#f5b301" color="#f5b301" />
                 ))}
               </div>
-              <span className="count">{reviews.length}+ Google yorumu</span>
+              <span className="count">{googleReviewCount}+ Google yorumu</span>
             </div>
           </div>
         </div>
@@ -1052,7 +1073,7 @@ export default function Page() {
 
         <div className="rv-cta">
           <a
-            href="https://www.google.com/maps/search/?api=1&query=gahvaltiankara"
+            href={GOOGLE_REVIEWS_URL}
             target="_blank"
             rel="noreferrer"
             className="btn btn-outline"
