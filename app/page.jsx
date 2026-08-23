@@ -16,6 +16,7 @@ import {
   Navigation,
   Search,
   CalendarHeart,
+  Images,
   Star,
   ChevronLeft,
   ChevronRight,
@@ -384,29 +385,82 @@ const menuCategories = [
 
 const events = [
   {
-    title: "Öğretmenler Buluşması",
-    date: "16 Haziran 2023",
-    img: "/foto/öğretmen.jpg",
+    title: "Doğum Günü Partisi",
+    date: "19 Mayıs 2024",
+    imgs: [
+      "/organizasyon/dogum-gunu-partisi-19-05-2024/1.jpg",
+      "/organizasyon/dogum-gunu-partisi-19-05-2024/2.jpg",
+      "/organizasyon/dogum-gunu-partisi-19-05-2024/3.jpg",
+      "/organizasyon/dogum-gunu-partisi-19-05-2024/4.jpg",
+      "/organizasyon/dogum-gunu-partisi-19-05-2024/5.jpg",
+    ],
   },
   {
     title: "Evlilik Teklifi",
-    date: "17 Haziran 2023",
-    img: "/foto/evlilik_teklifi.jpg",
-  },
-  {
-    title: "İlk Mangal Partisi",
-    date: "8 Temmuz 2023",
-    img: "/foto/mangal_partisi.jpg",
+    date: "7 Mayıs 2024",
+    imgs: ["/organizasyon/evlilik-teklifi-07-05-2024/1.jpg"],
   },
   {
     title: "Doğum Günü Partisi",
-    date: "9 Temmuz 2023",
-    img: "/foto/doğum_günü.jpg",
+    date: "13 Ocak 2024",
+    imgs: [
+      "/organizasyon/dogum-gunu-partisi-13-01-2024/1.jpg",
+      "/organizasyon/dogum-gunu-partisi-13-01-2024/2.jpg",
+      "/organizasyon/dogum-gunu-partisi-13-01-2024/3.jpg",
+      "/organizasyon/dogum-gunu-partisi-13-01-2024/4.jpg",
+      "/organizasyon/dogum-gunu-partisi-13-01-2024/5.jpg",
+      "/organizasyon/dogum-gunu-partisi-13-01-2024/6.jpg",
+    ],
   },
   {
     title: "Evlilik Yıl Dönümü",
     date: "20 Temmuz 2023",
-    img: "/foto/evlilik_yıldönümü.jpg",
+    imgs: [
+      "/organizasyon/evlilik-yil-donumu-20-07-2023/1.jpg",
+      "/organizasyon/evlilik-yil-donumu-20-07-2023/2.jpg",
+      "/organizasyon/evlilik-yil-donumu-20-07-2023/3.jpg",
+      "/organizasyon/evlilik-yil-donumu-20-07-2023/4.jpg",
+    ],
+  },
+  {
+    title: "Doğum Günü Partisi",
+    date: "9 Temmuz 2023",
+    imgs: [
+      "/organizasyon/dogum-gunu-partisi-09-07-2023/1.jpg",
+      "/organizasyon/dogum-gunu-partisi-09-07-2023/2.jpg",
+      "/organizasyon/dogum-gunu-partisi-09-07-2023/3.jpg",
+    ],
+  },
+  {
+    title: "İlk Mangal Partisi",
+    date: "8 Temmuz 2023",
+    imgs: [
+      "/organizasyon/ilk-mangal-partisi-08-07-2023/1.jpg",
+      "/organizasyon/ilk-mangal-partisi-08-07-2023/2.jpg",
+      "/organizasyon/ilk-mangal-partisi-08-07-2023/3.jpg",
+      "/organizasyon/ilk-mangal-partisi-08-07-2023/4.jpg",
+      "/organizasyon/ilk-mangal-partisi-08-07-2023/5.jpg",
+    ],
+  },
+  {
+    title: "Evlilik Teklifi",
+    date: "17 Haziran 2023",
+    imgs: [
+      "/organizasyon/evlilik-teklifi-17-06-2023/1.jpg",
+      "/organizasyon/evlilik-teklifi-17-06-2023/2.jpg",
+      "/organizasyon/evlilik-teklifi-17-06-2023/3.jpg",
+      "/organizasyon/evlilik-teklifi-17-06-2023/4.jpg",
+      "/organizasyon/evlilik-teklifi-17-06-2023/5.jpg",
+    ],
+  },
+  {
+    title: "Öğretmenler Buluşması",
+    date: "16 Haziran 2023",
+    imgs: [
+      "/organizasyon/ogretmenler-bulusmasi-16-06-2023/1.jpg",
+      "/organizasyon/ogretmenler-bulusmasi-16-06-2023/2.jpg",
+      "/organizasyon/ogretmenler-bulusmasi-16-06-2023/3.jpg",
+    ],
   },
 ];
 
@@ -438,17 +492,56 @@ export default function Page() {
   const prevReview = () => setReviewIdx((i) => (i <= 0 ? maxIdx : i - 1));
   const nextReview = () => setReviewIdx((i) => (i >= maxIdx ? 0 : i + 1));
 
+  const [eventVisible, setEventVisible] = useState(2);
+  useEffect(() => {
+    const update = () => setEventVisible(window.innerWidth <= 900 ? 1 : 2);
+    update();
+    window.addEventListener("resize", update);
+    return () => window.removeEventListener("resize", update);
+  }, []);
+
   const [eventIdx, setEventIdx] = useState(0);
-  const eventVisible = visibleCount;
+  const [photoIdx, setPhotoIdx] = useState({});
+  const [lightbox, setLightbox] = useState(null);
   const eventMax = Math.max(0, events.length - eventVisible);
   useEffect(() => {
+    setEventIdx((i) => Math.min(i, eventMax));
+  }, [eventMax]);
+  useEffect(() => {
+    if (lightbox) return;
     const t = setInterval(() => {
       setEventIdx((i) => (i >= eventMax ? 0 : i + 1));
-    }, 4500);
+    }, 6500);
     return () => clearInterval(t);
-  }, [eventMax]);
+  }, [eventMax, lightbox]);
   const prevEvent = () => setEventIdx((i) => (i <= 0 ? eventMax : i - 1));
   const nextEvent = () => setEventIdx((i) => (i >= eventMax ? 0 : i + 1));
+  const cyclePhoto = (ei, dir) => {
+    const total = events[ei].imgs.length;
+    setPhotoIdx((s) => ({
+      ...s,
+      [ei]: (((s[ei] || 0) + dir) % total + total) % total,
+    }));
+  };
+  useEffect(() => {
+    if (!lightbox) return;
+    const onKey = (e) => {
+      if (e.key === "Escape") setLightbox(null);
+      if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
+      const total = events[lightbox.ei].imgs.length;
+      const dir = e.key === "ArrowRight" ? 1 : -1;
+      setLightbox((lb) =>
+        lb ? { ...lb, pi: (((lb.pi + dir) % total) + total) % total } : lb,
+      );
+    };
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    window.addEventListener("keydown", onKey);
+    return () => {
+      document.body.style.overflow = prev;
+      window.removeEventListener("keydown", onKey);
+    };
+  }, [lightbox]);
 
   const [form, setForm] = useState({
     name: "",
@@ -940,24 +1033,92 @@ export default function Page() {
             <div
               className="events-track"
               style={{
-                transform: `translateX(calc(-${eventIdx} * (100% / ${eventVisible} + 7px)))`,
+                transform: `translateX(calc(-${eventIdx} * (100% / ${eventVisible} + ${(eventVisible === 1 ? 12 : 24) / eventVisible}px)))`,
               }}
             >
-              {events.map((e) => (
-                <div className="event-card" key={e.title}>
-                  <div
-                    className="event-img"
-                    style={{ backgroundImage: `url(${encodeURI(e.img)})` }}
-                  >
-                    <div className="event-img-overlay">
-                      <span className="event-date-chip">{e.date}</span>
+              {events.map((e, ei) => {
+                const pi = photoIdx[ei] || 0;
+                const img = e.imgs[pi];
+                return (
+                  <div className="event-card" key={`${e.title}-${e.date}`}>
+                    <div
+                      className="event-img"
+                      style={{ backgroundImage: `url(${encodeURI(img)})` }}
+                      onClick={() => setLightbox({ ei, pi })}
+                      role="button"
+                      tabIndex={0}
+                      onKeyDown={(ev) => {
+                        if (ev.key === "Enter" || ev.key === " ") {
+                          ev.preventDefault();
+                          setLightbox({ ei, pi });
+                        }
+                      }}
+                      aria-label={`${e.title} fotoğraflarını büyüt`}
+                    >
+                      {e.imgs.length > 1 && (
+                        <>
+                          <button
+                            className="event-img-nav prev"
+                            onClick={(ev) => {
+                              ev.stopPropagation();
+                              cyclePhoto(ei, -1);
+                            }}
+                            aria-label="Önceki fotoğraf"
+                          >
+                            <ChevronLeft size={18} />
+                          </button>
+                          <button
+                            className="event-img-nav next"
+                            onClick={(ev) => {
+                              ev.stopPropagation();
+                              cyclePhoto(ei, 1);
+                            }}
+                            aria-label="Sonraki fotoğraf"
+                          >
+                            <ChevronRight size={18} />
+                          </button>
+                        </>
+                      )}
+                      <div className="event-img-overlay">
+                        <span className="event-date-chip">{e.date}</span>
+                        {e.imgs.length > 1 && (
+                          <span className="event-count-chip">
+                            <Images size={12} /> {e.imgs.length} fotoğraf
+                          </span>
+                        )}
+                      </div>
+                    </div>
+                    {e.imgs.length > 1 && (
+                      <div className="event-thumbs">
+                        {e.imgs.map((src, i) => (
+                          <button
+                            key={src}
+                            className={
+                              "event-thumb" + (i === pi ? " active" : "")
+                            }
+                            style={{
+                              backgroundImage: `url(${encodeURI(src)})`,
+                            }}
+                            onClick={() =>
+                              setPhotoIdx((s) => ({ ...s, [ei]: i }))
+                            }
+                            aria-label={`Fotoğraf ${i + 1}`}
+                          />
+                        ))}
+                      </div>
+                    )}
+                    <div className="event-body">
+                      <h3>{e.title}</h3>
+                      <button
+                        className="event-open"
+                        onClick={() => setLightbox({ ei, pi })}
+                      >
+                        Fotoğrafları büyüt
+                      </button>
                     </div>
                   </div>
-                  <div className="event-body">
-                    <h3>{e.title}</h3>
-                  </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
           <button
@@ -968,6 +1129,64 @@ export default function Page() {
             <ChevronRight size={22} />
           </button>
         </div>
+
+        {lightbox && (
+          <div className="event-lb" onClick={() => setLightbox(null)}>
+            <button
+              className="event-lb-close"
+              onClick={() => setLightbox(null)}
+              aria-label="Kapat"
+            >
+              <X size={22} />
+            </button>
+            {events[lightbox.ei].imgs.length > 1 && (
+              <>
+                <button
+                  className="event-lb-nav prev"
+                  onClick={(ev) => {
+                    ev.stopPropagation();
+                    const total = events[lightbox.ei].imgs.length;
+                    setLightbox((lb) =>
+                      lb
+                        ? { ...lb, pi: (lb.pi - 1 + total) % total }
+                        : lb,
+                    );
+                  }}
+                  aria-label="Önceki fotoğraf"
+                >
+                  <ChevronLeft size={28} />
+                </button>
+                <button
+                  className="event-lb-nav next"
+                  onClick={(ev) => {
+                    ev.stopPropagation();
+                    const total = events[lightbox.ei].imgs.length;
+                    setLightbox((lb) =>
+                      lb ? { ...lb, pi: (lb.pi + 1) % total } : lb,
+                    );
+                  }}
+                  aria-label="Sonraki fotoğraf"
+                >
+                  <ChevronRight size={28} />
+                </button>
+              </>
+            )}
+            <img
+              src={encodeURI(events[lightbox.ei].imgs[lightbox.pi])}
+              alt={events[lightbox.ei].title}
+              onClick={(ev) => ev.stopPropagation()}
+            />
+            <div className="event-lb-meta" onClick={(ev) => ev.stopPropagation()}>
+              <strong>{events[lightbox.ei].title}</strong>
+              <span>
+                {events[lightbox.ei].date}
+                {events[lightbox.ei].imgs.length > 1
+                  ? ` · ${lightbox.pi + 1} / ${events[lightbox.ei].imgs.length}`
+                  : ""}
+              </span>
+            </div>
+          </div>
+        )}
 
         <div className="rv-dots">
           {Array.from({ length: eventMax + 1 }).map((_, i) => (
