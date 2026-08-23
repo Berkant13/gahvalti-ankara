@@ -396,11 +396,6 @@ const events = [
     ],
   },
   {
-    title: "Evlilik Teklifi",
-    date: "7 Mayıs 2024",
-    imgs: ["/organizasyon/evlilik-teklifi-07-05-2024/1.jpg"],
-  },
-  {
     title: "Doğum Günü Partisi",
     date: "13 Ocak 2024",
     imgs: [
@@ -440,17 +435,6 @@ const events = [
       "/organizasyon/ilk-mangal-partisi-08-07-2023/3.jpg",
       "/organizasyon/ilk-mangal-partisi-08-07-2023/4.jpg",
       "/organizasyon/ilk-mangal-partisi-08-07-2023/5.jpg",
-    ],
-  },
-  {
-    title: "Evlilik Teklifi",
-    date: "17 Haziran 2023",
-    imgs: [
-      "/organizasyon/evlilik-teklifi-17-06-2023/1.jpg",
-      "/organizasyon/evlilik-teklifi-17-06-2023/2.jpg",
-      "/organizasyon/evlilik-teklifi-17-06-2023/3.jpg",
-      "/organizasyon/evlilik-teklifi-17-06-2023/4.jpg",
-      "/organizasyon/evlilik-teklifi-17-06-2023/5.jpg",
     ],
   },
   {
