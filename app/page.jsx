@@ -550,7 +550,7 @@ export default function Page() {
       form.message ? `*Mesaj:* ${form.message}` : "",
     ].filter(Boolean);
     const text = encodeURIComponent(lines.join("\n"));
-    window.open(`https://wa.me/905336545047?text=${text}`, "_blank");
+    window.open(`https://wa.me/905386787938?text=${text}`, "_blank");
   };
 
   const [reserveIdx, setReserveIdx] = useState(0);
@@ -1425,7 +1425,7 @@ export default function Page() {
             WhatsApp ile Gönder
           </button>
           <span className="wa-hint">
-            Form bilgileri WhatsApp üzerinden 0533 654 5047'ye iletilir.
+            Form bilgileri WhatsApp üzerinden 0538 678 7938'e iletilir.
           </span>
         </form>
       </section>
