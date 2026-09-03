@@ -39,7 +39,8 @@ const reserveSlides = [
     key: "kahvalti",
     label: "Serpme Kahvaltı",
     title: "Organik köy kahvaltısı",
-    img: "/foto/kahvaltı_yeni.png",
+    img: "/foto/anafoto2.png",
+    imgs: ["/foto/anafoto2.png", "/foto/kahvaltı.jpg"],
     hours: "09:00 – 15:00",
     duration: "Her gün",
     minPeople: "En az 2 kişi",
@@ -54,8 +55,12 @@ const reserveSlides = [
     key: "mangal",
     label: "Kendin Pişir, Kendin Ye",
     title: "Bahçede mangal keyfi",
-    img: "/foto/mangal.jpg",
-    hours: "18ç:00 – 22:00",
+    img: "/foto/mangal1.jpeg",
+    imgs: [
+      { src: "/foto/mangal1.jpeg", pos: "center 72%" },
+      { src: "/foto/mangal2.jpeg", pos: "center 42%" },
+    ],
+    hours: "18:00 – 22:00",
     duration: "Yaz Sezonu",
     minPeople: "5 kişilik servis dahil",
     desc: "Mekan kullanımı, mangal, köz ve çoban salata dahil. Etinizi kendiniz pişirin, sevdiklerinizle doğada keyifli saatler geçirin.",
@@ -70,6 +75,7 @@ const reserveSlides = [
     label: "Özel Günler & Gruplar",
     title: "Organizasyonlarınız için",
     img: "/foto/evlilik_teklifi.jpg",
+    imgs: ["/foto/evlilik_teklifi.jpg", "/foto/doğum_günü.jpg"],
     hours: "Esnek saatler",
     duration: "Özel rezervasyon",
     minPeople: "Grup için arayın",
@@ -269,7 +275,7 @@ const menuCategories = [
     title: "Geleneksel Favoriler",
     subtitle: "Sofranızın baş tacı",
     icon: Soup,
-    cover: "/foto/kahvaltı_yeni.png",
+    cover: "/foto/anafoto2.png",
     highlight: "Serpme Kahvaltı",
     items: [
       {
@@ -284,6 +290,18 @@ const menuCategories = [
     ],
   },
   {
+    title: "Hamur İşleri",
+    subtitle: "El yapımı, sıcak sıcak",
+    icon: Croissant,
+    cover: "/foto/katmer.png",
+    items: [
+      { name: "Yağlı / Yağsız Bazlama" },
+      { name: "Gözleme", desc: "sade veya peynirli" },
+      { name: "Sigara Böreği", desc: "6'lı porsiyon · patatesli" },
+      { name: "Pişi", desc: "6'lı porsiyon" },
+    ],
+  },
+  {
     title: "Menemen",
     subtitle: "Tavada, cızır cızır",
     icon: EggFried,
@@ -293,23 +311,6 @@ const menuCategories = [
       { name: "Sucuklu Menemen" },
       { name: "Kıymalı Menemen" },
       { name: "Kavurmalı Menemen" },
-    ],
-  },
-  {
-    title: "Kendin Pişir, Kendin Ye",
-    subtitle: "Mangal keyfi, aile buluşması",
-    icon: Flame,
-    cover: "/foto/mangal.jpg",
-    badge: "YAZ SEZONU",
-    items: [
-      {
-        name: "Mangal",
-        desc: "18:00–22:00 · 5 kişilik servis, mangal ve köz dahil",
-        star: true,
-      },
-      { name: "Çoban Salata" },
-      { name: "Demlikte Çay" },
-      { name: "Semaverde Çay" },
     ],
   },
   {
@@ -326,18 +327,6 @@ const menuCategories = [
     ],
   },
   {
-    title: "Hamur İşleri",
-    subtitle: "El yapımı, sıcak sıcak",
-    icon: Croissant,
-    cover: "/foto/katmer.png",
-    items: [
-      { name: "Yağlı / Yağsız Bazlama" },
-      { name: "Gözleme", desc: "sade veya peynirli" },
-      { name: "Sigara Böreği", desc: "6'lı porsiyon · patatesli" },
-      { name: "Pişi", desc: "6'lı porsiyon" },
-    ],
-  },
-  {
     title: "Tost",
     subtitle: "Ekmek ya da bazlama",
     icon: Sandwich,
@@ -348,6 +337,24 @@ const menuCategories = [
       { name: "Sucuklu Tost" },
       { name: "Karışık Tost", desc: "sucuklu & kaşarlı" },
       { name: "Kavurmalı Kaşarlı Tost" },
+    ],
+  },
+  {
+    title: "Kendin Pişir, Kendin Ye",
+    subtitle: "Mangal keyfi, aile buluşması",
+    icon: Flame,
+    cover: "/foto/mangal1.jpeg",
+    coverPos: "center 72%",
+    badge: "YAZ SEZONU",
+    items: [
+      {
+        name: "Mangal",
+        desc: "18:00–22:00 · 5 kişilik servis, mangal ve köz dahil",
+        star: true,
+      },
+      { name: "Çoban Salata" },
+      { name: "Demlikte Çay" },
+      { name: "Semaverde Çay" },
     ],
   },
   {
@@ -697,7 +704,7 @@ export default function Page() {
         </div>
         <div className="hero-img">
           <img
-            src={encodeURI("/foto/kahvaltı_yeni.png")}
+            src={encodeURI("/foto/anafoto2.png")}
             alt="Serpme kahvaltı"
           />
         </div>
@@ -768,7 +775,7 @@ export default function Page() {
             </div>
             <div className="why-card">
               <div className="why-icon mustard" aria-hidden="true">
-                🛝
+                🏡
               </div>
               <div className="why-body">
                 <h3>Ortam</h3>
@@ -836,7 +843,7 @@ export default function Page() {
                 <h3>Sofra kurulur</h3>
                 <p>
                   Yöresel peynirler, reçeller, sıcak bazlama, menemen, sınırsız
-                  çay. Acele yok.
+                  çay... Acele yok.
                 </p>
               </div>
             </div>
@@ -847,8 +854,8 @@ export default function Page() {
               <div className="story-body">
                 <h3>Köy pazarından alışveriş yapılır</h3>
                 <p>
-                  Beğendiğiniz peynirden, baldan, zeytinyağından yanınızda
-                  götürün.
+                  Beğenilen zeytinler, ballar, zeytinyağları ve daha fazlası
+                  evde de yemek için satın alınır.
                 </p>
               </div>
             </div>
@@ -948,7 +955,10 @@ export default function Page() {
               <article className="menu-card" key={cat.title}>
                 <div
                   className="menu-cover"
-                  style={{ backgroundImage: `url(${encodeURI(cat.cover)})` }}
+                  style={{
+                    backgroundImage: `url(${encodeURI(cat.cover)})`,
+                    backgroundPosition: cat.coverPos || "center",
+                  }}
                 >
                   <div className="menu-cover-overlay" />
                   <div className="menu-cover-icon">
@@ -1308,6 +1318,7 @@ export default function Page() {
               </button>
             ))}
           </div>
+        </div>
 
           <div className="reserve-slider">
             <div
@@ -1316,10 +1327,24 @@ export default function Page() {
             >
               {reserveSlides.map((s) => (
                 <div className="reserve-slide" key={s.key}>
-                  <div
-                    className="reserve-img"
-                    style={{ backgroundImage: `url(${encodeURI(s.img)})` }}
-                  >
+                  <div className="reserve-img">
+                    <div className="reserve-img-shots">
+                      {(s.imgs || [s.img]).map((item) => {
+                        const src = typeof item === "string" ? item : item.src;
+                        const pos =
+                          typeof item === "string" ? undefined : item.pos;
+                        return (
+                          <div
+                            key={src}
+                            className="reserve-img-shot"
+                            style={{
+                              backgroundImage: `url(${encodeURI(src)})`,
+                              backgroundPosition: pos || "center",
+                            }}
+                          />
+                        );
+                      })}
+                    </div>
                     <div className="reserve-img-overlay">
                       <h3>{s.title}</h3>
                       <span className="reserve-hours">
@@ -1349,7 +1374,6 @@ export default function Page() {
             <Info size={20} />
             <p>Grup rezervasyonları için lütfen bizimle iletişime geçiniz.</p>
           </div>
-        </div>
 
         <form className="form-card" onSubmit={handleReserve}>
           <h3>Rezervasyon Formu</h3>
