@@ -41,7 +41,7 @@ const reserveSlides = [
     title: "Organik köy kahvaltısı",
     img: "/foto/anafoto2.png",
     imgs: ["/foto/anafoto2.png", "/foto/kahvaltı.jpg"],
-    hours: "09:00 – 15:00",
+    hours: "09:00 – 15:30",
     duration: "Her gün",
     minPeople: "En az 2 kişi",
     desc: "Yöresel peynirler, zeyinler, tahin, pekmez, bal, tereyağı, el yapımı reçeller, zeytin salatası, sucuklu yumurta, patates kızartması, domates-salatalık-peynir tabağı ve hamur işi tabağı ile serpme kahvaltı deneyimi.",
@@ -280,7 +280,7 @@ const menuCategories = [
     items: [
       {
         name: "Serpme Kahvaltı",
-        desc: "09:00–15:00 arası · en az 2 kişi · sınırsız çay dahil",
+        desc: "09:00–15:30 arası · en az 2 kişi · sınırsız çay dahil",
         star: true,
       },
       { name: "Yeşillik ve Peynir Tabağı" },
@@ -697,7 +697,7 @@ export default function Page() {
               <span>Organik Ürünler</span>
             </div>
             <div className="stat">
-              <b>09–15</b>
+              <b>09–15.30</b>
               <span>Her Gün Açık</span>
             </div>
           </div>
@@ -1504,7 +1504,7 @@ export default function Page() {
               <Clock3 size={20} />
               <div>
                 <div className="label">Çalışma Saatleri</div>
-                <div className="value">Her gün · 09:00 – 15:00</div>
+                <div className="value">Her gün · 09:00 – 15:30</div>
               </div>
             </div>
             <hr />
@@ -1559,7 +1559,7 @@ export default function Page() {
           <div className="footer-col">
             <h4>— Çalışma Saatleri</h4>
             <p className="strong">Serpme Kahvaltı</p>
-            <p>Her gün · 09:00 – 15:00</p>
+            <p>Her gün · 09:00 – 15:30</p>
             <p className="strong">Mangal (Yaz Sezonu)</p>
             <p>18:00 – 22:00</p>
           </div>
